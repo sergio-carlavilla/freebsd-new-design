@@ -200,7 +200,7 @@ other = "Current selection:"
 # Copyright
 # ---------------------------------------------------
 [freebsd-copyright]
-other = "FreeBSD ist ein eingetragenes Warenzeichen der FreeBSD Foundation."
+other = "FreeBSD is a registered trademark of the FreeBSD Foundation."
 
 [pam]
 other = "This article was written for the FreeBSD Project by ThinkSec AS and Network Associates Laboratories, the Security Research Division of Network Associates, Inc. under DARPA/SPAWAR contract N66001-01-C-8035 (“CBOSS”), as part of the DARPA CHATS research program."
@@ -209,25 +209,25 @@ other = "This article was written for the FreeBSD Project by ThinkSec AS and Net
 other = "Coverity is a registered trademark; Coverity Extend, Coverity Prevent and Coverity Prevent SQS are trademarks of Coverity, Inc."
 
 [ibm]
-other = "IBM, AIX, OS/2, PowerPC, PS/2, S/390 und ThinkPad sind Warenzeichen der International Business Machines Corporation in den Vereinigten Staaten, anderen Ländern oder beiden."
+other = "IBM, AIX, OS/2, PowerPC, PS/2, S/390, and ThinkPad are trademarks of International Business Machines Corporation in the United States, other countries, or both."
 
 [ieee]
-other = "IEEE, POSIX und 802 sind eingetragene Warenzeichen vom Institute of Electrical and Electronics Engineers, Inc. in den Vereinigten Staaten."
+other = "IEEE, POSIX, and 802 are registered trademarks of Institute of Electrical and Electronics Engineers, Inc. in the United States."
 
 [redhat]
-other = "Red Hat, RPM, sind Warenzeichen oder eingetragene Warenzeichen von Red Hat, Inc. in den Vereinigten Staaten und in anderen Ländern."
+other = "Red Hat, RPM, are trademarks or registered trademarks of Red Hat, Inc. in the United States and other countries."
 
 [3com]
-other = "3Com und HomeConnect sind eingetragene Warenzeichen der 3Com Corporation."
+other = "3Com and HomeConnect are registered trademarks of 3Com Corporation."
 
 [amd]
-other = "AMD, AMD Athlon, AMD Opteron, &Eacute;lan und PCnet sind eingetragene Warenzeichen von Advanced Micro Devices, Inc."
+other = "AMD, AMD Athlon, AMD Opteron, AMD Phenom, AMD Sempron, AMD Turion, Athlon, Élan, Opteron, and PCnet are trademarks of Advanced Micro Devices, Inc."
 
 [adobe]
-other = "Adobe, Acrobat, Acrobat Reader und PostScript sind entweder eingetragene Warenzeichen oder Warenzeichen von Adobe Systems Incorporated in den Vereinigten Staaten und/oder in anderen Ländern."
+other = "Adobe, Acrobat, Acrobat Reader, Flash and PostScript are either registered trademarks or trademarks of Adobe Systems Incorporated in the United States and/or other countries."
 
 [apple]
-other = "Apple, FireWire, Mac, Macintosh, Mac OS, Quicktime und TrueType sind eingetragene Warenzeichen von Apple Computer, Inc., in den Vereinigten Staaten und anderen Ländern."
+other = "Apple, AirPort, FireWire, iMac, iPhone, iPad, Mac, Macintosh, Mac OS, Quicktime, and TrueType are trademarks of Apple Inc., registered in the U.S. and other countries."
 
 [git]
 other = "Git and the Git logo are either registered trademarks or trademarks of Software Freedom Conservancy, Inc., corporate home of the Git Project, in the United States and/or other countries."
@@ -239,79 +239,79 @@ other = "GitHub is a trademark of GitHub Inc., registered in the United States a
 other = "GITLAB is a trademark of GitLab Inc. in the United States and other countries and regions."
 
 [intel]
-other = "Intel, Celeron, EtherExpress, i386, i486, Itanium, Pentium und Xeon sind Warenzeichen oder eingetragene Warenzeichen der Intel Corporation oder ihrer Gesellschaften in den Vereinigten Staaten und in anderen Ländern."
+other = "Intel, Celeron, Centrino, Core, EtherExpress, i386, i486, Itanium, Pentium, and Xeon are trademarks or registered trademarks of Intel Corporation or its subsidiaries in the United States and other countries."
 
 [linux]
-other = "Linux ist ein eingetragenes Warenzeichen von Linus Torvalds."
+other = "Linux is a registered trademark of Linus Torvalds."
 
 [microsoft]
-other = "Microsoft, MS-DOS, Outlook, Windows, Windows Media und Windows NT sind entweder eingetragene Warenzeichen oder Warenzeichen der Microsoft Corporation in den Vereinigten Staaten und/oder in anderen Ländern."
+other = "Microsoft, IntelliMouse, MS-DOS, Outlook, Windows, Windows Media and Windows NT are either registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries."
 
 [opengroup]
-other = "Motif, OSF/1 und UNIX sind eingetragene Warenzeichen und IT DialTone und The Open Group sind Warenzeichen der The Open Group in den Vereinigten Staaten und in anderen Ländern."
+other = "Motif, OSF/1, and UNIX are registered trademarks and IT DialTone and The Open Group are trademarks of The Open Group in the United States and other countries."
 
 [qualcomm]
-other = "QUALCOMM und Eudora sind eingetragene Warenzeichen von QUALCOMM Incorporated."
+other = "QUALCOMM and Eudora are registered trademarks of QUALCOMM Incorporated."
 
 [sparc]
-other = "Sparc, Sparc64, und UltraSPARC sind Warenzeichen von SPARC International, Inc in den Vereinigten Staaten und in anderen Ländern. Produkte, die das Warenzeichen SPARC tragen, basieren auf einer von Sun Microsystems, Inc. entwickelten Architektur."
+other = "SPARC, SPARC64, and UltraSPARC are trademarks of SPARC International, Inc in the United States and other countries. SPARC International, Inc owns all of the SPARC trademarks and under licensing agreements allows the proper use of these trademarks by its members."
 
 [sun]
-other = "Sun, Sun Microsystems, Java, Java Virtual Machine, JDK, JSP, JVM, Netra, Solaris, StarOffice und SunOS sind Warenzeichen oder eingetragene Warenzeichen von Sun Microsystems, Inc. in den Vereinigten Staaten und in anderen Ländern."
+other = "Sun, Sun Microsystems, Java, Java Virtual Machine, JDK, JRE, JSP, JVM, Netra, OpenJDK, Solaris, StarOffice, SunOS and VirtualBox are trademarks or registered trademarks of Sun Microsystems, Inc. in the United States and other countries."
 
 [unix]
-other = "UNIX ist ein eingetragenes Warenzeichen von The Open Group in den Vereinigten Staaten und in anderen Ländern."
+other = "UNIX is a registered trademark of The Open Group in the United States and other countries."
 
 [netbsd]
 other = "NetBSD is a registered trademark of the NetBSD Foundation."
 
 [realnetworks]
-other = "RealNetworks, RealPlayer und RealAudio sind eingetragene Warenzeichen von RealNetworks, Inc."
+other = "RealNetworks, RealPlayer, and RealAudio are the registered trademarks of RealNetworks, Inc."
 
 [oracle]
-other = "Oracle ist ein eingetragenes Warenzeichen der Oracle Corporation."
+other = "Oracle is a registered trademark of Oracle Corporation."
 
 [3ware]
-other = "3ware und Escalade sind eingetragene Warenzeichen von 3ware Inc."
+other = "3ware is a registered trademark of 3ware Inc."
 
 [arm]
-other = "ARM ist ein eingetragenes Warenzeichen von ARM Limited."
+other = "ARM is a registered trademark of ARM Limited."
 
 [adaptec]
-other = "Adaptec ist ein eingetragenes Warenzeichen von Adaptec, Inc."
+other = "Adaptec is a registered trademark of Adaptec, Inc."
 
 [google]
 other = "Android is a trademark of Google Inc."
 
 [heidelberger]
-other = "Heidelberg, Helvetica, Palatino und Times Roman sind Marken der Heidelberger Druckmaschinen AG in Deutschland und anderen Ländern."
+other = "Heidelberg, Helvetica, Palatino, and Times Roman are either registered trademarks or trademarks of Heidelberger Druckmaschinen AG in the U.S. and other countries."
 
 [intuit]
-other = "Intuit und Quicken sind eingetragene Warenzeichen und/oder Dienstleistungsmarken von Intuit Inc. oder einer ihrer Geselllschaften in den Vereinigten Staaten und in anderen Ländern."
+other = "Intuit and Quicken are registered trademarks and/or registered service marks of Intuit Inc., or one of its subsidiaries, in the United States and other countries."
 
 [lsilogic]
-other = "LSI Logic, AcceleRAID, eXtremeRAID, MegaRAID und Mylex sind Warenzeichen oder eingetragene Warenzeichen der LSI Logic Corp."
+other = "LSI Logic, AcceleRAID, eXtremeRAID, MegaRAID and Mylex are trademarks or registered trademarks of LSI Logic Corp."
 
 [themathworks]
-other = "MATLAB ist ein eingetragenes Warenzeichen von The MathWorks, Inc."
+other = "MATLAB is a registered trademark of The MathWorks, Inc."
 
 [thomson]
-other = "SpeedTouch ist ein Warenzeichen von Thomson."
+other = "SpeedTouch is a trademark of Thomson."
 
 [vmware]
-other = "VMware ist ein Warenzeichen von VMware, Inc"
+other = "VMware is a trademark of VMware, Inc."
 
 [wolframresearch]
-other = "Mathematica ist ein eingetragenes Warenzeichen von Wolfram Research, Inc."
+other = "Mathematica is a registered trademark of Wolfram Research, Inc."
 
 [xiph]
-other = "Ogg Vorbis und Xiph.Org sind Warenzeichen von Xiph.Org."
+other = "Ogg Vorbis and Xiph.Org are trademarks of Xiph.Org."
 
 [xfree86]
-other = "XFree86 ist ein Warenzeichen von The XFree86 Project, Inc."
+other = "XFree86 is a trademark of The XFree86 Project, Inc."
 
 [daemon-news]
 other = "This article was originally published in the January 2000 issue of <a class=\"link\" href=\"http://www.daemonnews.org/\">DaemonNews</a>. This version of the article may include updates from Matt and other authors to reflect changes in FreeBSD's VM implementation."
 
 [general]
-other = "Viele Produktbezeichnungen von Herstellern und Verkäufern sind Warenzeichen. Soweit dem FreeBSD Project das Warenzeichen bekannt ist, werden die in diesem Dokument vorkommenden Bezeichnungen mit dem Symbol “™” oder dem Symbol “®” gekennzeichnet."
+other = "Many of the designations used by manufacturers and sellers to distinguish their products are claimed as trademarks. Where those designations appear in this document, and the FreeBSD Project was aware of the trademark claim, the designations have been followed by the “™” or the “®” symbol."

@@ -1,585 +1,317 @@
+# ---------------------------------------------------
 # Global
+# ---------------------------------------------------
 [freebsd]
 other = "FreeBSD"
 
-[freebsdProject]
-other = "FreeBSD 計劃"
+[freebsd-project]
+other = "FreeBSD 計畫"
 
-[freebsdPowerServe]
-other = "FreeBSD The Power to Serve"
+[freebsd-foundation]
+other = "FreeBSD 基金會"
 
-[freebsdFoundation]
-other = "The FreeBSD Foundation"
+[freebsd-documentation]
+other = "FreeBSD 文件"
 
-[downloadFreeBSD]
-other = "下載 FreeBSD"
+[freebsd-documentation-main-desc]
+other = "FreeBSD 是用於現代伺服器、桌面環境和嵌入式平台的作業系統。"
 
-[production]
-other = "Production"
+[global-search-placeholder]
+other = "在文章、書籍和指引中搜尋。"
 
-# Header
-[donate]
-other = "捐贈 FreeBSD"
+[toc]
+other = "目錄"
 
-[donateFoundation]
-other = "Donate to the FreeBSD Foundation"
+[resources]
+other = "資源"
+
+[download-pdf]
+other = "下載 PDF"
+
+[edit-page]
+other = "編輯此頁"
+
+[trademarks]
+other = "註冊商標"
+
+[books]
+other = "書籍"
+
+[articles]
+other = "文章"
+
+[choose-language]
+other = "選擇語言"
+
+[last-modified]
+other = "最後修改於"
+
+[by]
+other = "由"
 
 [search]
-other = "搜尋"
+other = "Search"
 
-# Navigation
-[home]
-other = "首頁"
-
-[about]
-other = "關於"
-
-[introduction]
-other = "簡介"
-
-[features]
-other = "特色"
-
-[advocacy]
-other = "宣傳"
-
-[marketing]
-other = "行銷"
-
-[privacyPolicy]
-other = "隱私政策"
-
-[projects]
-other = "Projects"
-
-[getFreeBSD]
-other = "取得 FreeBSD"
-
-[releaseInformation]
-other = "Release Information"
-
-[releaseEngineering]
-other = "Release Engineering"
-
+# ---------------------------------------------------
+# Header
+# ---------------------------------------------------
 [documentation]
 other = "文件"
-
-[faq]
-other = "常見問題集"
-
-[handbook]
-other = "使用手冊"
-
-[porterHandbook]
-other = "Porter 手冊"
-
-[developerHandbook]
-other = "Developer 手冊"
-
-[manualPages]
-other = "Manual Pages"
-
-[documentationProjectPrimer]
-other = "文件計畫入門書"
-
-[allBooksArticles]
-other = "所有書籍與文章"
 
 [community]
 other = "社群"
 
-[mailingLists]
-other = "郵件論壇"
+# ---------------------------------------------------
+# Main page
+# ---------------------------------------------------
+[getting-started]
+other = "入門"
 
-[forums]
-other = "論壇"
+[learn-basics]
+other = "學習 FreeBSD 基礎"
 
-[userGroups]
-other = "愛用者組織"
+[download]
+other = "下載"
 
-[events]
-other = "活動"
+[download-freebsd]
+other = "下載 FreeBSD"
 
-[FreeBSDJournal]
-other = "FreeBSD Journal"
+[handbook]
+other = "FreeBSD 使用手冊"
 
-[QA]
-other = "Q&A (external)"
+[handbook-desc]
+other = "持續演進的 FreeBSD 使用者綜合資源"
 
-[developers]
-other = "開發者"
+[porters-handbook]
+other = "FreeBSD Porter 手冊"
 
-[projectIdeas]
-other = "計畫構想"
+[porters-handbook-desc]
+other = "FreeBSD ports 系統的完整參考資料"
 
-[gitRepository]
-other = "Git 檔案庫"
+[faq]
+other = "FreeBSD FAQ"
 
-[gitMirror]
-other = "Git 鏡像站"
+[faq-desc]
+other = "FreeBSD 13.X 與 12.X 常見問題集"
 
-[phabricator]
-other = "程式碼審查 (Phabricator)"
+[fdp]
+other = "文件計畫入門書"
 
-[wiki]
-other = "Wiki"
+[fdp-desc]
+other = "如何開始文件貢獻的完整指引"
 
-[CI]
-other = "持續整合服務"
+[books-list]
+other = "FreeBSD 書籍清單"
 
-[support]
-other = "支援"
+[articles-list]
+other = "FreeBSD 文章清單"
 
-[vendors]
-other = "供應商"
+[manual-pages]
+other = "Manual pages"
 
-[securityInformation]
-other = "安全資訊"
+[manual-pages-desc]
+other = "FreeBSD Manual Pages"
 
-[bugReports]
-other = "問題回報"
-
-[submittingBugReports]
-other = "提交問題回報"
-
-[foundation]
-other = "基金會"
-
-[monetaryDonations]
-other = "資金捐贈"
-
-[hardwareDonations]
-other = "硬體捐贈"
-
-#Main
-[freebsdDescription1]
-other = "FreeBSD 是一個使用於現代伺服器，桌面與嵌入式"
-
-[freebsdDescription2]
-other = "平台"
-
-[freebsdDescription3]
-other = "的先進作業系統。 由一群龐大的 "
-
-[freebsdDescription4]
-other = "社群"
-
-[freebsdDescription5]
-other = "持續超過三十年的開發。 由於它先進的網路、安全性與儲存方面的特色使得 FreeBSD 成為許多"
-
-[freebsdDescription6]
-other = "大型網站"
-
-[freebsdDescription7]
-other = "以及最普遍的嵌入式網路與儲存裝置的平台選擇。 "
-
-[learnMore]
-other = "參閱詳情"
-
-[getThe]
-other = "立即取得"
-
-[journal]
-other = "FreeBSD Journal"
-
-[25th-logo]
-other = "25th Anniversary Logo"
-
-[supportedReleases]
-other = "Supported Releases"
-
-[supportLifecycle]
-other = "支援生命週期"
-
-[upcoming]
-other = "Upcoming"
-
-[newFreeBSD]
-other= "不熟悉 FreeBSD?"
-
-[shortcuts]
-other = "常用連結"
-
-[reportingProblems]
-other = "問題回報"
-
-[ports]
-other = "Ports"
-
-[latestNews]
-other = "最新新聞"
-
-[upcomingEvents]
-other = "近期活動"
-
-[press]
-other = "媒體報導"
-
-[securityAdvisories]
-other = "安全公告"
-
-[errataNotices]
-other = "勘誤公告"
-
-[more]
-other = "更多"
-
-[rssNews]
-other = "News RSS Feed"
-
-[rssSecurity]
-other = "Security Advisories and Errata Notices RSS Feed"
-
-#404
-[notFoundTitle]
-other = "We could not find the page you requested."
-
-[notFoundDesc]
-other = "Please try your request again, use one of the links in the navigation menu, or the search box at the top of the page."
-
+# ---------------------------------------------------
 # Footer
-[copyright]
-other = "保留所有權利。"
+# ---------------------------------------------------
+[system]
+other = "System"
 
-[trademark]
-other = "FreeBSD 標誌是 FreeBSD 基金會的註冊商標，由 FreeBSD 基金會授權 FreeBSD 計畫使用"
+[light]
+other = "淺色"
 
-[contact]
-other = "聯絡資訊"
+[dark]
+other = "深色"
 
-[legalNotices]
-other = "法律聲明"
+[high-contrast]
+other = "高對比"
 
-# Ports form
-[ports-search]
-other = "Search ports for:"
+[previous-versions]
+other = "先前版本"
 
-[all]
-other = "All"
+[4-4bsd-documents]
+other = "4.4BSD 文件"
 
-[package-name]
-other = "Package Name"
+[about]
+other = "關於"
 
-[description]
-other = "Description"
-
-[long-description]
-other = "Long description"
-
-[maintainer]
-other = "Maintainer"
-
-[requires]
-other = "Requires"
-
-[submit]
-other = "Submit"
-
-# Months
-[1]
-other = "January"
-
-[2]
-other = "February"
-
-[3]
-other = "March"
-
-[4]
-other = "April"
-
-[5]
-other = "May"
-
-[6]
-other = "June"
-
-[7]
-other = "July"
-
-[8]
-other = "August"
-
-[9]
-other = "September"
-
-[10]
-other = "October"
-
-[11]
-other = "November"
-
-[12]
-other = "December"
-
-# Security section
-[data]
-other = "Data"
-
-[errataNoticeName]
-other = "Errata Notice name"
-
-[advisoryName]
-other = "Advisory name"
-
-# Events section
-[currentEvents]
-other = "Current/Upcoming Events:"
-
-[pastEvents]
-other = "Past Events:"
-
-[upcomingFreeBSDEvents]
-other = "Upcoming FreeBSD Events"
-
-# Continents, countries
-[europe]
-other = "Europe"
-
-[africa]
-other = "Africa"
-
-[australia]
-other = "Australia"
-
-[newZealand]
-other = "New Zealand"
-
-[northAmerica]
-other = "North America"
-
-[asia]
-other = "Asia"
-
-[southAmerica]
-other = "South America"
-
-[oceania]
-other = "Oceania"
-
-[global]
-other = "Global"
-
-# Commercial software
-[databases]
-other = "Databases"
-
-[developmentTools]
-other = "Development Tools"
-
-[ecommerce]
-other = "E-Commerce Solutions and Tools"
-
-[email]
-other = "Electronic Mail Software"
-
-[misc]
-other = "Miscellaneous"
-
-[network]
-other = "Network Systems and Applications"
-
-[scientific]
-other = "Scientific and Language Tools"
-
-[security]
-other = "Security"
-
-[isp]
-other = "System Administration / ISP"
-
-# sidenav
-[applications]
-other = "Applications"
-
-[administration]
-other = "Administration"
-
-[news]
-other = "News"
-
-[pressSidenav]
-other = "Press"
-
-[multimedia]
-other = "Multimedia"
-
-[art]
-other = "Artwork"
-
-[logo]
-other = "Logo"
+[legal]
+other = "法律"
 
 [donations]
 other = "捐贈"
 
-[privacy]
-other = "隱私政策"
+[legal-notices]
+other = "法律聲明"
 
-[mailinglists]
-other = "郵件論壇"
+[made-with]
+other = "Made with"
 
-[newsgroups]
-other = "Newsgroups"
+[by-freebsd-community]
+other = "by the FreeBSD Community"
 
-[usergroups]
-other = "愛用者組織"
+[copyright]
+other = "保留所有權利"
 
-[sourceCodeRepositories]
-other = "Source code repositories"
+# ---------------------------------------------------
+# Articles page
+# ---------------------------------------------------
+[list-desc-articles]
+other = "探索 FreeBSD 文章綜合清單。"
 
-[releng]
-other = "Release Engineering"
+# ---------------------------------------------------
+# Books page
+# ---------------------------------------------------
+[prev]
+other = "Prev"
 
-[platforms]
-other = "Platforms"
+[next]
+other = "Next"
 
-[ideas]
-other = "Project Ideas"
+[home]
+other = "Home"
 
-[contributing]
-other = "Contributing"
+[split-html]
+other = "Split HTML"
 
-[FAQ]
-other = "FAQ"
+[single-html]
+other = "Single HTML"
 
-[man]
-other = "Manual Pages"
+[book-chapters]
+other = "Book chapters"
 
-[papers]
-other = "Presentations and Papers"
+[book-menu]
+other = "Book menu"
 
-[booksArticles]
-other = "Books and Articles Online"
+[list-desc-books]
+other = "Explore a comprehensive list of FreeBSD books."
 
-[publications]
-other = "Publications"
+# ---------------------------------------------------
+# Languages page
+# ---------------------------------------------------
+[select-language]
+other = "Select a language"
 
-[newbies]
-other = "新手上路"
+[current-selection]
+other = "Current selection:"
 
-[docproj]
-other = "文件計畫"
+# ---------------------------------------------------
+# Copyright
+# ---------------------------------------------------
+[freebsd-copyright]
+other = "FreeBSD 是 FreeBSD 基金會的註冊商標。"
 
-[archive]
-other = "Archive"
+[pam]
+other = "This article was written for the FreeBSD Project by ThinkSec AS and Network Associates Laboratories, the Security Research Division of Network Associates, Inc. under DARPA/SPAWAR contract N66001-01-C-8035 (“CBOSS”), as part of the DARPA CHATS research program."
 
-[releases]
-other = "Release Information"
+[coverity]
+other = "Coverity 是註冊商標。而 Coverity Extend、Coverity Prevent、Coverity Prevent SQS 是 Coverity, Inc. 的註冊商標。"
 
-[productionRelease]
-other = "Production Release"
+[ibm]
+other = "IBM, AIX, OS/2, PowerPC, PS/2, S/390 以及 ThinkPad 是 International Business Machines Corporation 在美國和其他國家的商標。"
 
-[upcomingRelease]
-other = "Upcoming Release"
+[ieee]
+other = "IEEE, POSIX 以及 802 是 Institute of Electrical and Electronics Engineers, Inc. 在美國的註冊商標。"
 
-[snapshotReleases]
-other = "Snapshot Releases"
+[redhat]
+other = "Red Hat, RPM, 是 Red Hat, Inc. 在美國和其他國家的註冊商標。"
 
-[portedApplications]
-other = "Ported Applications"
+[3com]
+other = "3Com 和 HomeConnect 是 3Com Corporation 的註冊商標。"
 
-[gnome]
-other = "GNOME"
+[amd]
+other = "AMD, AMD Athlon, AMD Opteron, Athlon, &Eacute;lan, Opteron, 和 PCnet 是 Advanced Micro Devices, Inc. 的商標。"
 
-[installationInstructions]
-other = "Installation Instructions"
+[adobe]
+other = "Adobe, Acrobat, Acrobat Reader, Flash 以及 PostScript 是 Adobe Systems Incorporated 在美國和/或其他國家的商標或註冊商標。"
 
-[upgradeInstructions]
-other = "Upgrade Instructions"
+[apple]
+other = "Apple, AirPort, FireWire, iMac, iPhone, iPad, Mac, Macintosh, Mac OS, Quicktime 以及 TrueType 是 Apple Inc. 在美國以及其他國家的註冊商標。"
 
-[availableApplications]
-other = "Available Applications"
+[git]
+other = "Git and the Git logo are either registered trademarks or trademarks of Software Freedom Conservancy, Inc., corporate home of the Git Project, in the United States and/or other countries."
 
-[howHelp]
-other = "How to Help"
+[github]
+other = "GitHub is a trademark of GitHub Inc., registered in the United States and other countries."
 
-[reportingBug]
-other = "Reporting a Bug"
+[gitlab]
+other = "GITLAB is a trademark of GitLab Inc. in the United States and other countries and regions."
 
-[screenshots]
-other = "Screenshots"
+[intel]
+other = "Intel, Celeron, Centrino, Core, EtherExpress, i386, i486, Itanium, Pentium 以及 Xeon 是 Intel Corporation 及其分支機構在美國和其他國家的商標或註冊商標。"
 
-[contactUs]
-other = "Contact Us"
+[linux]
+other = "Linux 是 Linus Torvalds 的註冊商標。"
 
-[HALFAQ]
-other = "HAL FAQ"
+[microsoft]
+other = "Microsoft, IntelliMouse, MS-DOS, Outlook, Windows, Windows Media 以及 Windows NT 是 Microsoft Corporation 在美國和/或其他國家的商標或註冊商標。"
 
-[upgradeFAQ]
-other = "2.30 to 2.32 Upgrade FAQ"
+[opengroup]
+other = "Motif, OSF/1, 和 UNIX 是 The Open Group 在美國和其他國家的註冊商標； IT DialTone 和 The Open Group 是其商標。"
 
-[developmentBranchFAQ]
-other = "Development Branch FAQ"
+[qualcomm]
+other = "QUALCOMM 和 Eudora 是 QUALCOMM Incorporated 的註冊商標。"
 
-[creatingPorts]
-other = "Creating Ports"
+[sparc]
+other = "Sparc, Sparc64, 以及 UltraSPARC 是 SPARC International, Inc 在美國和其他國家的商標。為 Sun Microsystems, Inc. 所開發的架構，包含 SPARC 商標的產品。"
 
-[knownIssues]
-other = "Known Issues"
+[sun]
+other = "Sun, Sun Microsystems, Java, Java Virtual Machine, JDK, JRE, JSP, JVM, Netra, OpenJDK, Solaris, StarOffice, SunOS 以及 VirtualBox 是 Sun Microsystems, Inc. 在美國和其他國家的商標或註冊商標。"
 
-[aboutPorts]
-other = "About ports"
+[unix]
+other = "Motif, OSF/1 以及 UNIX 是 The Open Group 在美國和其他國家的註冊商標； IT DialTone 和 The Open Group 是其商標。"
 
-[installing]
-other = "Installing"
+[netbsd]
+other = "NetBSD是 NetBSD Foundation的註冊商標。"
 
-[updating]
-other = "Updating"
+[realnetworks]
+other = "RealNetworks, RealPlayer, 和 RealAudio 是 RealNetworks, Inc. 的註冊商標。"
 
-[searching]
-other = "Searching"
+[oracle]
+other = "Oracle 是 Oracle Corporation 的註冊商標。"
 
-[categories]
-other = "Categories"
+[3ware]
+other = "3ware 是 3ware Inc 的註冊商標。"
 
-[alphabetically]
-other = "listed alphabetically"
+[arm]
+other = "ARM 是 ARM Limited. 的註冊商標。"
 
-[logicalGroup]
-other = "listed by logical group"
+[adaptec]
+other = "Adaptec 是 Adaptec, Inc. 的註冊商標。"
 
-[allPorts]
-other = "List of All Ports"
+[google]
+other = "Android is a trademark of Google Inc."
 
-[moreInformation]
-other = "For More Information"
+[heidelberger]
+other = "Heidelberg, Helvetica, Palatino 以及 Times Roman 是 Heidelberger Druckmaschinen AG 在美國以及其他國家的商標或註冊商標。"
 
-[software]
-other = "Software"
+[intuit]
+other = "Intuit 和 Quicken 是 Intuit Inc., 或其子公司在美國和其他國家的商標或註冊商標。"
 
-[hardware]
-other = "Hardware"
+[lsilogic]
+other = "LSI Logic, AcceleRAID, eXtremeRAID, MegaRAID 和 Mylex 是 LSI Logic Corp 的商標或註冊商標。"
 
-[consulting]
-other = "Consulting"
+[themathworks]
+other = "MATLAB 是 The MathWorks, Inc. 的註冊商標。"
 
-[ispCommercial]
-other = "Internet Service Providers"
+[thomson]
+other = "SpeedTouch 是 Thomson 的商標。"
 
-[securityInfo]
-other = "Security Information"
+[vmware]
+other = "VMware 是 VMware, Inc. 的商標。"
 
-[advisories]
-other = "Advisories"
+[wolframresearch]
+other = "Mathematica 是 Wolfram Research, Inc 的註冊商標。"
 
-[errataNoticesSidenav]
-other = "Errata Notices"
+[xiph]
+other = "Ogg Vorbis 和 Xiph.Org 是 Xiph.Org 的商標。"
 
-[unsupportedReleases]
-other = "Unsupported Releases"
+[xfree86]
+other = "XFree86 是 The XFree86 Project, Inc 的商標。."
 
-[readSecurityAdvisories]
-other = "How to read FreeBSD Security Advisories"
+[daemon-news]
+other = "This article was originally published in the January 2000 issue of <a class=\"link\" href=\"http://www.daemonnews.org/\">DaemonNews</a>. This version of the article may include updates from Matt and other authors to reflect changes in FreeBSD's VM implementation."
 
-[charterSecurityOfficerTeam]
-other = "Charter for the Security Officer and Team"
-
-[bugreports]
-other = "Bug Reports"
-
-[submitPR]
-other = "Submit a Problem Report"
-
-[webresources]
-other = "Web Resources"
+[general]
+other = "許多製造商和經銷商使用一些稱為商標的圖案或文字設計來區別自己的產品。 本文件中出現的眾多商標，以及 FreeBSD Project 本身廣所人知的商標，後面將以 “™” 或 “®” 符號來標示。"
