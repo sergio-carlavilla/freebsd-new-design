@@ -200,34 +200,34 @@ other = "Current selection:"
 # Copyright
 # ---------------------------------------------------
 [freebsd-copyright]
-other = "FreeBSD ist ein eingetragenes Warenzeichen der FreeBSD Foundation."
+other = "A FreeBSD a FreeBSD Foundation bejegyzett védjegye."
 
 [pam]
 other = "This article was written for the FreeBSD Project by ThinkSec AS and Network Associates Laboratories, the Security Research Division of Network Associates, Inc. under DARPA/SPAWAR contract N66001-01-C-8035 (“CBOSS”), as part of the DARPA CHATS research program."
 
 [coverity]
-other = "Coverity is a registered trademark; Coverity Extend, Coverity Prevent and Coverity Prevent SQS are trademarks of Coverity, Inc."
+other = "A Coverity bejegyzett védjegye, a Coverity Extend, Coverity Prevent és Coverity Prevent SQS pedig védjegyei a Coverity, Inc.-nek."
 
 [ibm]
-other = "IBM, AIX, OS/2, PowerPC, PS/2, S/390 und ThinkPad sind Warenzeichen der International Business Machines Corporation in den Vereinigten Staaten, anderen Ländern oder beiden."
+other = "Az IBM, AIX, OS/2, PowerPC, PS/2, S/390 és ThinkPad az International Business Machines Corporation védjegyei az Egyesült Államokban, más országokban, vagy mindkettõben."
 
 [ieee]
-other = "IEEE, POSIX und 802 sind eingetragene Warenzeichen vom Institute of Electrical and Electronics Engineers, Inc. in den Vereinigten Staaten."
+other = "Az IEEE, POSIX és 802 az Institute of Electrical and Electronics Engineers, Inc. bejegyzett védjegyei az Egyesült Államokban."
 
 [redhat]
-other = "Red Hat, RPM, sind Warenzeichen oder eingetragene Warenzeichen von Red Hat, Inc. in den Vereinigten Staaten und in anderen Ländern."
+other = "A Red Hat és RPM a Red Hat, Inc. védjegyei vagy bejegyzett védjegyei az Egyesült Államokban és más országokban."
 
 [3com]
-other = "3Com und HomeConnect sind eingetragene Warenzeichen der 3Com Corporation."
+other = "A 3Com és HomeConnect a 3Com Corporation bejegyzett védjegyei."
 
 [amd]
-other = "AMD, AMD Athlon, AMD Opteron, &Eacute;lan und PCnet sind eingetragene Warenzeichen von Advanced Micro Devices, Inc."
+other = "Az AMD, AMD Athlon, AMD Opteron, Athlon, Élan, Opteron és PCnet az Advanced Micro Devices, Inc. védjegyei."
 
 [adobe]
-other = "Adobe, Acrobat, Acrobat Reader und PostScript sind entweder eingetragene Warenzeichen oder Warenzeichen von Adobe Systems Incorporated in den Vereinigten Staaten und/oder in anderen Ländern."
+other = "Az Adobe, Acrobat, Acrobat Reader, és PostScript az Adobe Systems Incorporated bejegyzett védjegyei, vagy védjegyei az Egyesült Államokban és/vagy más országokban."
 
 [apple]
-other = "Apple, FireWire, Mac, Macintosh, Mac OS, Quicktime und TrueType sind eingetragene Warenzeichen von Apple Computer, Inc., in den Vereinigten Staaten und anderen Ländern."
+other = "Az Apple, AirPort, FireWire, Mac, Macintosh, Mac OS, Quicktime, és TrueType az Apple Computer, Inc., bejegyzett védjegyei az Egyesült Államokban és más országokban."
 
 [git]
 other = "Git and the Git logo are either registered trademarks or trademarks of Software Freedom Conservancy, Inc., corporate home of the Git Project, in the United States and/or other countries."
@@ -239,79 +239,79 @@ other = "GitHub is a trademark of GitHub Inc., registered in the United States a
 other = "GITLAB is a trademark of GitLab Inc. in the United States and other countries and regions."
 
 [intel]
-other = "Intel, Celeron, EtherExpress, i386, i486, Itanium, Pentium und Xeon sind Warenzeichen oder eingetragene Warenzeichen der Intel Corporation oder ihrer Gesellschaften in den Vereinigten Staaten und in anderen Ländern."
+other = "Az Intel, Celeron, EtherExpress, i386, i486, Itanium, Pentium és Xeon az Intel Corporation vagy leányvállalatainak védjegyei vagy bejegyzett védjegyei az Egyesült Államokban és más országokban."
 
 [linux]
-other = "Linux ist ein eingetragenes Warenzeichen von Linus Torvalds."
+other = "A Linux Linus Torvalds bejegyzett védjegye."
 
 [microsoft]
-other = "Microsoft, MS-DOS, Outlook, Windows, Windows Media und Windows NT sind entweder eingetragene Warenzeichen oder Warenzeichen der Microsoft Corporation in den Vereinigten Staaten und/oder in anderen Ländern."
+other = "A Microsoft, IntelliMouse, MS-DOS, Outlook, Windows, Windows Media és Windows NT a Microsoft Corporation bejegyzett veacute;djegyei, vagy védjegyei az Egyesült Államokban és/vagy más országokban."
 
 [opengroup]
-other = "Motif, OSF/1 und UNIX sind eingetragene Warenzeichen und IT DialTone und The Open Group sind Warenzeichen der The Open Group in den Vereinigten Staaten und in anderen Ländern."
+other = "A Motif, OSF/1 és UNIX a The Open Group bejegyzett védjegyei, az IT DialTone és a The Open Group pedig védjegyei az Egyesült államokban és/vagy más országokban."
 
 [qualcomm]
-other = "QUALCOMM und Eudora sind eingetragene Warenzeichen von QUALCOMM Incorporated."
+other = "A QUALCOMM és Eudora a QUALCOMM Incorporated bejegyzett védjegyei."
 
 [sparc]
-other = "Sparc, Sparc64, und UltraSPARC sind Warenzeichen von SPARC International, Inc in den Vereinigten Staaten und in anderen Ländern. Produkte, die das Warenzeichen SPARC tragen, basieren auf einer von Sun Microsystems, Inc. entwickelten Architektur."
+other = "A SPARC, SPARC64, és UltraSPARC a SPARC International, Inc védjegyei az Egyesült államokban és más országokban. A SPARC International, Inc birtokolja az összes SPARC védjegyet és annak tagjai között teszi azok megfelelõ használatát elérhetõvé a licencelési megegyezések alapján."
 
 [sun]
-other = "Sun, Sun Microsystems, Java, Java Virtual Machine, JDK, JSP, JVM, Netra, Solaris, StarOffice und SunOS sind Warenzeichen oder eingetragene Warenzeichen von Sun Microsystems, Inc. in den Vereinigten Staaten und in anderen Ländern."
+other = "A Sun, Sun Microsystems, Java, Java Virtual Machine, JDK, JRE, JSP, JVM, Netra, OpenJDK, Solaris, StarOffice, SunOS és VirtualBox a Sun Microsystems, Inc. védjegyei vagy bejegyzett védjegyei az Egyesült Államokban és más országokban."
 
 [unix]
-other = "UNIX ist ein eingetragenes Warenzeichen von The Open Group in den Vereinigten Staaten und in anderen Ländern."
+other = "A UNIX a The Open Group bejegyzett védjegye az Egyesült Államokban és más országokban."
 
 [netbsd]
-other = "NetBSD is a registered trademark of the NetBSD Foundation."
+other = "A NetBSD a NetBSD Foundation bejegyzett védjegye."
 
 [realnetworks]
-other = "RealNetworks, RealPlayer und RealAudio sind eingetragene Warenzeichen von RealNetworks, Inc."
+other = "A RealNetworks, RealPlayer és RealAudio a RealNetworks, Inc. bejegyzett védjegyei."
 
 [oracle]
-other = "Oracle ist ein eingetragenes Warenzeichen der Oracle Corporation."
+other = "Az Oracle az Oracle Corporation bejegyzett védjegye."
 
 [3ware]
-other = "3ware und Escalade sind eingetragene Warenzeichen von 3ware Inc."
+other = "A 3ware a 3ware Inc. bejegyzett védjegyei."
 
 [arm]
-other = "ARM ist ein eingetragenes Warenzeichen von ARM Limited."
+other = "Az ARM az ARM Limited bejegyzett védjegye."
 
 [adaptec]
-other = "Adaptec ist ein eingetragenes Warenzeichen von Adaptec, Inc."
+other = "A Adaptec az Adaptec, Inc. bejegyzett védjegye."
 
 [google]
 other = "Android is a trademark of Google Inc."
 
 [heidelberger]
-other = "Heidelberg, Helvetica, Palatino und Times Roman sind Marken der Heidelberger Druckmaschinen AG in Deutschland und anderen Ländern."
+other = "A Heidelberg, Helvetica, Palatino, és Times Roman a Heidelberger Druckmaschinen AG bejegyzett védjegyei, vagy védjegyei az Egyesült Államokban és más országokban."
 
 [intuit]
-other = "Intuit und Quicken sind eingetragene Warenzeichen und/oder Dienstleistungsmarken von Intuit Inc. oder einer ihrer Geselllschaften in den Vereinigten Staaten und in anderen Ländern."
+other = "Az Intuit és Quicken az Intuit Inc., vagy valamely leányvállalatának bejegyzett védjegyei és/vagy bejegyzett szervizmárkái az Egyesült Államokban és más országokban."
 
 [lsilogic]
-other = "LSI Logic, AcceleRAID, eXtremeRAID, MegaRAID und Mylex sind Warenzeichen oder eingetragene Warenzeichen der LSI Logic Corp."
+other = "Az LSI Logic, AcceleRAID, eXtremeRAID, MegaRAID és Mylex az LSI Logic Corp. védjegyei vagy bejegyzett védjegyei."
 
 [themathworks]
-other = "MATLAB ist ein eingetragenes Warenzeichen von The MathWorks, Inc."
+other = "A MATLAB a The MathWorks, Inc. bejegyzett védjegye."
 
 [thomson]
-other = "SpeedTouch ist ein Warenzeichen von Thomson."
+other = "A SpeedTouch a Thomson védjegye."
 
 [vmware]
-other = "VMware ist ein Warenzeichen von VMware, Inc"
+other = "A VMware a VMware, Inc. védjegye."
 
 [wolframresearch]
-other = "Mathematica ist ein eingetragenes Warenzeichen von Wolfram Research, Inc."
+other = "A Mathematica a Wolfram Research, Inc. védjegye."
 
 [xiph]
-other = "Ogg Vorbis und Xiph.Org sind Warenzeichen von Xiph.Org."
+other = "Az Ogg Vorbis és Xiph.Org a Xiph.Org védjegyei."
 
 [xfree86]
-other = "XFree86 ist ein Warenzeichen von The XFree86 Project, Inc."
+other = "Az XFree86 az XFree86 Project, Inc. védjegye."
 
 [daemon-news]
 other = "This article was originally published in the January 2000 issue of <a class=\"link\" href=\"http://www.daemonnews.org/\">DaemonNews</a>. This version of the article may include updates from Matt and other authors to reflect changes in FreeBSD's VM implementation."
 
 [general]
-other = "Viele Produktbezeichnungen von Herstellern und Verkäufern sind Warenzeichen. Soweit dem FreeBSD Project das Warenzeichen bekannt ist, werden die in diesem Dokument vorkommenden Bezeichnungen mit dem Symbol “™” oder dem Symbol “®” gekennzeichnet."
+other = "A gyártók és terjesztõk által használt megnevezések közül sok védjegy jogot követel. Ahol ilyen megnevezés tûnik fel ebben a dokumentumban, és a FreeBSD Projektnek tudomása volt a védjegyrõl, a megnevezést a “™” vagy a “®” szimbólum követi."

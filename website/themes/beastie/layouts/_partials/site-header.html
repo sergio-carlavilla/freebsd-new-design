@@ -3,11 +3,12 @@
   <div class="header-container">
     <div class="logo-menu-bars-container">
       <a href="/" class="logo">
-      {{ if $.Site.Params.isOnline }}
-        <img src="{{ absLangURL ($.Site.BaseURL) }}images/FreeBSD-monochromatic.svg" width="160" height="50" alt="FreeBSD logo" />
-      {{ else }}
-        <img src="/images/FreeBSD-monochromatic.svg" width="160" height="50" alt="FreeBSD logo" />
-      {{ end }}
+        <img
+          src="{{ "images/FreeBSD-monochromatic.svg" | relURL }}"
+          width="160"
+          height="50"
+          alt="FreeBSD logo"
+        />
       </a>
       <label class="menu-bars" for="menu-bars">
         <i class="fa fa-bars" aria-hidden="true"></i>
@@ -25,10 +26,23 @@
             </label>
           </a>
           <ul class="sub-menu">
-            <li class="title"><a href="{{ $.Site.Params.websiteURL }}/about/">{{ i18n "h-about" }}</a></li>
-            <li><a href="{{ $.Site.Params.websiteURL }}/about/">{{ i18n "h-freebsd" }}</a></li>
-            <li><a href="https://freebsdfoundation.org/about-us/about-the-foundation/">{{ i18n "h-freebsd-foundation" }}</a></li>
-            <li><a href="{{ $.Site.Params.websiteURL }}/internal/code-of-conduct/">{{ i18n "h-code-of-conduct" }}</a></li>
+            <li class="title">
+              <a href="{{ "about" | relLangURL }}">{{ i18n "h-about" }}</a>
+            </li>
+            <li>
+              <a href="{{ "about" | relLangURL }}">{{ i18n "h-freebsd" }}</a>
+            </li>
+            <li>
+              <a
+                href="https://freebsdfoundation.org/about-us/about-the-foundation/"
+                >{{ i18n "h-freebsd-foundation" }}</a
+              >
+            </li>
+            <li>
+              <a href="{{ "internal/code-of-conduct" | relLangURL }}"
+                >{{ i18n "h-code-of-conduct" }}</a
+              >
+            </li>
           </ul>
         </li>
         <li class="menu-item">
@@ -40,10 +54,26 @@
             </label>
           </a>
           <ul class="sub-menu">
-            <li class="title"><a href="{{ $.Site.Params.websiteURL }}/where/">{{ i18n "h-get-freebsd" }}</a></li>
-            <li><a href="{{ $.Site.Params.websiteURL }}/releases/">{{ i18n "h-release-information" }}</a></li>
-            <li><a href="{{ $.Site.Params.websiteURL }}/releng/">{{ i18n "h-release-engineering" }}</a></li>
-            <li><a href="{{ $.Site.Params.websiteURL }}/security/">{{ i18n "h-security-advisories" }}</a></li>
+            <li class="title">
+              <a href="{{ "where" | relLangURL }}"
+                >{{ i18n "h-get-freebsd" }}</a
+              >
+            </li>
+            <li>
+              <a href="{{ "releases" | relLangURL }}"
+                >{{ i18n "h-release-information" }}</a
+              >
+            </li>
+            <li>
+              <a href="{{ "releng" | relLangURL }}"
+                >{{ i18n "h-release-engineering" }}</a
+              >
+            </li>
+            <li>
+              <a href="{{ "security" | relLangURL }}"
+                >{{ i18n "h-security-advisories" }}</a
+              >
+            </li>
           </ul>
         </li>
         <li class="menu-item">
@@ -55,15 +85,51 @@
             </label>
           </a>
           <ul class="sub-menu">
-            <li class="title"><a href={{ printf "%s%s%s" "https://docs.FreeBSD.org/" $currentLang "/" }}>{{ i18n "documentation" }}</a></li>
-            <li><a href={{ printf "%s%s%s" "https://docs.FreeBSD.org/" $currentLang "/books/handbook/" }}>{{ i18n "h-freebsd-handbook" }}</a></li>
-            <li><a href={{ printf "%s%s%s" "https://docs.FreeBSD.org/" $currentLang "/books/porters-handbook/" }}>{{ i18n "porterHandbook" }}</a></li>
-            <li><a href={{ printf "%s%s%s" "https://docs.FreeBSD.org/" $currentLang "/books/fdp-primer" }}>{{ i18n "h-documentation-handbook" }}</a></li>
-            <li><a href="https://man.FreeBSD.org">{{ i18n "h-manual-pages" }}</a></li>
-            <li><a href="https://papers.FreeBSD.org">{{ i18n "h-presentation-and-papers" }}</a></li>
+            <li class="title">
+              <a
+                href="{{ printf "%s%s%s" "https://docs.FreeBSD.org/" $currentLang "/" }}"
+                >{{ i18n "documentation" }}</a
+              >
+            </li>
+            <li>
+              <a
+                href="{{ printf "%s%s%s" "https://docs.FreeBSD.org/" $currentLang "/books/handbook/" }}"
+                >{{ i18n "h-freebsd-handbook" }}</a
+              >
+            </li>
+            <li>
+              <a
+                href="{{ printf "%s%s%s" "https://docs.FreeBSD.org/" $currentLang "/books/porters-handbook/" }}"
+                >{{ i18n "porterHandbook" }}</a
+              >
+            </li>
+            <li>
+              <a
+                href="{{ printf "%s%s%s" "https://docs.FreeBSD.org/" $currentLang "/books/fdp-primer" }}"
+                >{{ i18n "h-documentation-handbook" }}</a
+              >
+            </li>
+            <li>
+              <a href="https://man.FreeBSD.org">{{ i18n "h-manual-pages" }}</a>
+            </li>
+            <li>
+              <a href="https://papers.FreeBSD.org"
+                >{{ i18n "h-presentation-and-papers" }}</a
+              >
+            </li>
             <li><a href="https://wiki.FreeBSD.org">{{ i18n "h-wiki" }}</a></li>
-            <li><a href={{ printf "%s%s%s" "https://docs.FreeBSD.org/" $currentLang "/books" }}>{{ i18n "h-books" }}</a></li>
-            <li><a href={{ printf "%s%s%s" "https://docs.FreeBSD.org/" $currentLang "/articles" }}>{{ i18n "h-articles" }}</a></li>
+            <li>
+              <a
+                href="{{ printf "%s%s%s" "https://docs.FreeBSD.org/" $currentLang "/books" }}"
+                >{{ i18n "h-books" }}</a
+              >
+            </li>
+            <li>
+              <a
+                href="{{ printf "%s%s%s" "https://docs.FreeBSD.org/" $currentLang "/articles" }}"
+                >{{ i18n "h-articles" }}</a
+              >
+            </li>
           </ul>
         </li>
         <li class="menu-item">
@@ -75,22 +141,75 @@
             </label>
           </a>
           <ul class="sub-menu">
-            <li class="title"><a href="{{ $.Site.Params.websiteURL }}/community/">{{ i18n "h-community" }}</a></li>
-            <li><a href={{ printf "%s%s%s" "https://docs.FreeBSD.org/" $currentLang "/articles/contributing" }}>{{ i18n "h-get-involved" }}</a></li>
-            <li><a href="https://forums.freebsd.org/">{{ i18n "h-community-forum" }}</a></li>
-            <li><a href="https://lists.freebsd.org/">{{ i18n "h-mailing-lists" }}</a></li>
-            <li><a href="https://wiki.freebsd.org/IRC/Channels">{{ i18n "h-irc-channels" }}</a></li>
-            <li><a href="https://bugs.freebsd.org/bugzilla/">{{ i18n "h-bug-tracker" }}</a></li>
-            <li><a href="{{ $.Site.Params.websiteURL }}/support/">{{ i18n "h-support" }}</a></li>
+            <li class="title">
+              <a href="{{ "community" | relLangURL }}"
+                >{{ i18n "h-community" }}</a
+              >
+            </li>
+            <li>
+              <a
+                href="{{ printf "%s%s%s" "https://docs.FreeBSD.org/" $currentLang "/articles/contributing" }}"
+                >{{ i18n "h-get-involved" }}</a
+              >
+            </li>
+            <li>
+              <a href="https://forums.freebsd.org/"
+                >{{ i18n "h-community-forum" }}</a
+              >
+            </li>
+            <li>
+              <a href="https://lists.freebsd.org/"
+                >{{ i18n "h-mailing-lists" }}</a
+              >
+            </li>
+            <li>
+              <a href="https://wiki.freebsd.org/IRC/Channels"
+                >{{ i18n "h-irc-channels" }}</a
+              >
+            </li>
+            <li>
+              <a href="https://bugs.freebsd.org/bugzilla/"
+                >{{ i18n "h-bug-tracker" }}</a
+              >
+            </li>
+            <li>
+              <a href="{{ "support" | relLangURL }}">{{ i18n "h-support" }}</a>
+            </li>
           </ul>
         </li>
       </ul>
     </nav>
     <div class="search-donate-container">
       {{ $currentLanguage := $.Site.Language }}
-      <form class="search" method="get" id="search-header-form" action="https://docs.freebsd.org/search" name="search-header-form">
+      <form
+        class="search"
+        method="get"
+        id="search-header-form"
+        action="https://duckduckgo.com"
+        name="search-header-form"
+        onsubmit="document.getElementById('words').value+=' site:FreeBSD.org'"
+      >
         <input type="hidden" name="DB" value="{{ $currentLanguage }}" />
-        <input id="words" name="P" type="text" size="20" maxlength="255" value="" />
+        <input type="hidden" name="ka" value="v" />
+        <input type="hidden" name="kt" value="v" />
+        <input type="hidden" name="kh" value="1" />
+        <input type="hidden" name="kj" value="r2" />
+        <input
+          id="words"
+          name="q"
+          type="text"
+          size="20"
+          maxlength="25    5"
+          onfocus="if( this.value==this.defaultValue ) this.value='';"
+          value="{{ i18n "search" }}"
+          placeholder="{{ i18n "search" }}"
+        />
+        <input
+          id="submit"
+          name="submit"
+          type="submit"
+          value="{{ i18n "    search" }}"
+        />
         <button>
           <i class="fa fa-search" aria-hidden="true"></i>
         </button>

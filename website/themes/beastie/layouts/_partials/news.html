@@ -24,24 +24,25 @@
         {{ $newsDayCounter = 1 }}
       {{ end }}
       {{ if ne $newsMonthCur $newsMonthPrev }}
-      <h4 class="feed-item-date" title="{{ dateFormat "2006 01" .date }}">{{ dateFormat "2006-01" .date }}</h4>
+        <h4 class="feed-item-date" title="{{ dateFormat "2006 01" .date }}">
+          {{ dateFormat "2006-01" .date }}
+        </h4>
       {{ end }}
       <p class="feed-item">
-      {{ $firstLink := "" }}
-      {{ $firstLink := replaceRE `.*?href="([^"]+)".*` "$1" .description }}
-      <!--<a href="{{.Site.BaseURL | relLangURL }}news/newsflash/#{{ dateFormat "2006-01-02" .date }}:{{ $newsDayCounter }}">-->
-      <a href="{{ $firstLink | safeHTML }}">
-
-      {{ if .title }}
-        {{ $title := replaceRE "<a .*\">" "" .title }}
-        {{ $title = replaceRE "</a>" "" $title }}
-        {{ $title | safeHTML }}
-      {{ else }}
-        {{ $description := replaceRE "<a .*\">" "" .description }}
-        {{ $description = replaceRE "</a>" "" $description }}
-        {{ $description | safeHTML }}
-      {{ end }}
-      </a>
+        {{ $firstLink := "" }}
+        {{ $firstLink := replaceRE `.*?href="([^"]+)".*` "$1" .description }}
+        <!--<a href="{{ .Site.BaseURL | relLangURL }}news/newsflash/#{{ dateFormat "2006-01-02" .date }}:{{ $newsDayCounter }}">-->
+        <a href="{{ $firstLink | safeHTML }}">
+          {{ if .title }}
+            {{ $title := replaceRE "<a .*\">" "" .title }}
+            {{ $title = replaceRE "</a>" "" $title }}
+            {{ $title | safeHTML }}
+          {{ else }}
+            {{ $description := replaceRE "<a .*\">" "" .description }}
+            {{ $description = replaceRE "</a>" "" $description }}
+            {{ $description | safeHTML }}
+          {{ end }}
+        </a>
       </p>
       {{ $newsCounter = add $newsCounter 1 }}
       {{ $newsDayPrev = $newsDayCur }}
@@ -50,6 +51,6 @@
   {{ end }}
 {{ end }}
 <div class="feed-source">
-  <a href="{{ printf "%s%s/%s" ($.Scratch.Get "sUrl") ($.Scratch.Get "lang") "news/newsflash/" }}">{{ i18n "more" }}</a>,
-  <a href="{{ absLangURL ($.Site.BaseURL) }}news/feed.xml">Feed</a>
+  <a href="{{ "news/newsflash" | relLangURL }}">{{ i18n "more" }}</a>,
+  <a href="{{ "news/feed.xml" | relURL }}">Feed</a>
 </div>

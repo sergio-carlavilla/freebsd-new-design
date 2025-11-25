@@ -2,14 +2,21 @@
 {{ $advisoriesCounter := 0 }}
 {{ with .Site.Data.security.advisories }}
   {{ $prevDate := false }}
-  {{range (sort .advisories "date" "desc") }}
+  {{ range (sort .advisories "date" "desc") }}
     {{ $currDate := dateFormat "2006-01" .date }}
     {{ if lt $advisoriesCounter 8 }}
-    {{ if ne $currDate $prevDate }}
-      <h4 class="feed-item-date txtdate" title="{{ dateFormat "02 Jan 2006" .date }}">{{ $currDate }}</h4>
-    {{ end }}
+      {{ if ne $currDate $prevDate }}
+        <h4
+          class="feed-item-date txtdate"
+          title="{{ dateFormat "02 Jan 2006" .date }}"
+        >
+          {{ $currDate }}
+        </h4>
+      {{ end }}
       <p class="feed-item">
-        <a href="{{ $.Site.BaseURL }}security/advisories/{{ .name }}.asc">{{ .name }}</a>
+        <a href="{{ printf "security/advisories/%s.asc" .name | relURL }}"
+          >{{ .name }}</a
+        >
       </p>
     {{ end }}
     {{ $advisoriesCounter = add $advisoriesCounter 1 }}
@@ -17,6 +24,6 @@
   {{ end }}
 {{ end }}
 <div class="feed-source">
-  <a href="{{ printf "%s%s/%s" ($.Scratch.Get "sUrl") ($.Scratch.Get "lang") "security/advisories/" }}">{{ i18n "more" }}</a>,
-  <a href="{{ absLangURL ($.Site.BaseURL) }}security/feed.xml">Feed</a>
+  <a href="{{ "security/advisories/" | relLangURL }}">{{ i18n "more" }}</a>,
+  <a href="{{ "security/feed.xml" | relURL }}">Feed</a>
 </div>

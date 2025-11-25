@@ -3,14 +3,14 @@
     <section class="logo-column">
       {{ if $.Site.Params.isOnline }}
         <img
-          src="{{ absLangURL ($.Site.BaseURL) }}images/FreeBSD-colors.svg"
+          src="{{ "images/FreeBSD-colors.svg" | relURL }}"
           width="160"
           height="50"
           alt="FreeBSD logo"
         />
       {{ else }}
         <img
-          src="/images/FreeBSD-colors.svg"
+          src="images/FreeBSD-colors.svg"
           width="160"
           height="50"
           alt="FreeBSD logo"
@@ -21,7 +21,7 @@
           <div class="language-container">
             <a id="languages" href="{{ "languages" | absLangURL }}">
               <img
-                src="{{ absLangURL ($.Site.BaseURL ) }}images/language.png"
+                src="{{ "images/language.png" | relURL }}"
                 class="language-image"
                 alt="{{ i18n "choose-language" }}"
               />
@@ -45,7 +45,7 @@
       <h3 class="column-title">{{ i18n "f-about" }}</h3>
       <ul class="column-elements-container">
         <li>
-          <a href="{{ $.Site.Params.websiteURL }}/about/" class="column-element"
+          <a href="{{ "about" | relLangURL }}" class="column-element"
             >{{ i18n "f-freebsd" }}</a
           >
         </li>
@@ -55,21 +55,19 @@
           >
         </li>
         <li>
-          <a href="{{ $.Site.Params.websiteURL }}/where/" class="column-element"
+          <a href="{{ "where" | relLangURL }}" class="column-element"
             >{{ i18n "f-get-freebsd" }}</a
           >
         </li>
         <li>
           <a
-            href="{{ $.Site.Params.websiteURL }}/internal/code-of-conduct"
+            href="{{ "internal/code-of-conduct" | relLangURL }}"
             class="column-element"
             >{{ i18n "f-code-of-conduct" }}</a
           >
         </li>
         <li>
-          <a
-            href="{{ $.Site.Params.websiteURL }}/security/"
-            class="column-element"
+          <a href="{{ "security" }}" class="column-element"
             >{{ i18n "f-security-advisories" }}</a
           >
         </li>
@@ -117,7 +115,7 @@
       <ul class="column-elements-container">
         <li>
           <a
-            href="https://docs.FreeBSD.org/articles/contributing"
+            href="https://docs.FreeBSD.org/en/articles/contributing"
             }}
             class="column-element"
             >{{ i18n "h-get-involved" }}</a
@@ -155,22 +153,18 @@
         </li>
         <li>
           <a
-            href="{{ $.Site.Params.websiteURL }}/copyright/freebsd-license/"
+            href="{{ "copyright/freebsd-license" | relLangURL }}"
             class="column-element"
             >{{ i18n "f-licensing" }}</a
           >
         </li>
         <li>
-          <a
-            href="{{ $.Site.Params.websiteURL }}/privacy/"
-            class="column-element"
+          <a href="{{ "privacy" | relLangURL }}" class="column-element"
             >{{ i18n "f-privacy-policy" }}</a
           >
         </li>
         <li>
-          <a
-            href="{{ $.Site.Params.websiteURL }}/copyright/"
-            class="column-element"
+          <a href="{{ "copyright" | relLangURL }}" class="column-element"
             >{{ i18n "f-legal-notices" }}</a
           >
         </li>
@@ -178,7 +172,9 @@
     </section>
     <section class="copyright-column">
       <p>
-        &copy; 1994-{{ now.Format "2006" }} {{ i18n "f-all-rights-reserved" }}
+        &copy;
+        1994-{{ now.Format "2006" }}
+        {{ i18n "f-all-rights-reserved" }}
       </p>
       <span
         >{{ i18n "f-made-with" }}

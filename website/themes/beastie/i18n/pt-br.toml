@@ -5,112 +5,118 @@
 other = "FreeBSD"
 
 [freebsd-project]
-other = "Le Projet FreeBSD"
+other = "O Projeto FreeBSD"
 
 [freebsd-foundation]
-other = "La fondation FreeBSD"
+other = "A Fundação FreeBSD"
 
 [freebsd-documentation]
-other = "Documentation FreeBSD"
+other = "Documentação do FreeBSD"
 
 [freebsd-documentation-main-desc]
-other = "FreeBSD est un système d'exploitation pour les plates-formes de type serveur, station de travail et les systèmes embarqués"
+other = "O FreeBSD é um sistema operacional usado para servidores modernos, desktops e plataformas embarcadas."
 
 [global-search-placeholder]
-other = "Chercher dans les articles, livres et guides."
+other = "Pesquise nos artigos, livros e guias."
 
 [toc]
-other = "Sommaire"
+other = "Índice"
 
 [resources]
-other = "Ressources"
+other = "Recursos"
 
 [download-pdf]
-other = "Téléchargement en PDF"
+other = "Download PDF"
 
 [edit-page]
-other = "Éditer cette page"
+other = "Edite essa página"
 
 [trademarks]
-other = "Marques déposées"
+other = "trademarks"
 
 [books]
-other = "Livres"
+other = "Livros"
 
 [articles]
-other = "Articles"
+other = "Artigos"
 
 [choose-language]
-other = "Choose language"
+other = "Escolha o idioma"
 
 [last-modified]
-other = "Last modified on"
+other = "Última alteração em"
 
 [by]
-other = "by"
+other = "por"
 
 [search]
-other = "Search"
+other = "Pesquisar"
+
+[stale-warning-message]
+other = "Esta tradução pode estar desatualizada. Para ajudar com as traduções, acesse a"
+
+[translation-instance]
+other = "ferramenta de traduções do FreeBSD"
 
 # ---------------------------------------------------
 # Header
 # ---------------------------------------------------
 [documentation]
-other = "Documentation"
+other = "Documentação"
 
 [community]
-other = "Communauté"
+other = "Comunidade"
 
 # ---------------------------------------------------
 # Main page
 # ---------------------------------------------------
 [getting-started]
-other = "Débuter"
+other = "Primeiros passos"
 
 [learn-basics]
-other = "Apprendre les bases de FreeBSD"
+other = "Aprenda sobre os fundamentos do FreeBSD"
 
 [download]
-other = "Téléchargement"
+other = "Download"
 
 [download-freebsd]
-other = "Télécharger FreeBSD"
+other = "Baixe o FreeBSD"
 
 [handbook]
-other = "Manuel de référence"
+other = "FreeBSD Handbook"
 
 [handbook-desc]
-other = "Une ressource complète et en constante évolution à destination des utilisateurs de FreeBSD"
+other = "Um recurso abrangente e em constante evolução para usuários do FreeBSD"
 
 [porters-handbook]
-other = "Manuel du porteur d'application"
+other = "FreeBSD Porter's Handbook"
 
 [porters-handbook-desc]
-other = "Une référence complète sur le système des logiciels portés de FreeBSD"
+other = "Uma referência completa sobre o sistema de ports do FreeBSD"
 
 [faq]
-other = "FAQ FreeBSD"
+other = "FreeBSD FAQ"
 
 [faq-desc]
-other = "Questions Fréquemment Posées sur FreeBSD 13.X et 12.X"
+other = "Perguntas Frequentes (FAQ) para o FreeBSD 13.X e 12.X"
 
 [fdp]
-other = "Manuel d'introduction au projet de documentation"
+other = "Primer do Projeto de Documentação"
 
 [fdp-desc]
-other = "Un guide complet pour commencer à contribuer à la documentation"
+other = "Um guia completo sobre como começar a contribuir com a documentação"
 
 [books-list]
-other = "Liste des livres FreeBSD"
+other = "Lista de livros do FreeBSD"
 
 [articles-list]
-other = "Liste des articles FreeBSD"
+other = "Lista de artigos do FreeBSD"
 
 [manual-pages]
-other = "Pages de manuel"
+other = "Páginas de Manual"
 
 [manual-pages-desc]
-other = "Pages de manuel FreeBSD"
+other = "Páginas de Manual do FreeBSD"
 
 # ---------------------------------------------------
 # Footer
@@ -119,82 +125,82 @@ other = "Pages de manuel FreeBSD"
 other = "System"
 
 [light]
-other = "Clair"
+other = "Light"
 
 [dark]
-other = "Sombre"
+other = "Dark"
 
 [high-contrast]
-other = "Contraste élevé"
+other = "Alto contraste"
 
 [previous-versions]
-other = "Versions précédentes"
+other = "Versões anteriores"
 
 [4-4bsd-documents]
-other = "Documents 4.4BSD"
+other = "Documentos 4.4BSD"
 
 [about]
-other = "À propos"
+other = "Sobre"
 
 [legal]
-other = "Informations légales"
+other = "Legal"
 
 [donations]
-other = "Dons"
+other = "Doações"
 
 [legal-notices]
-other = "Informations légales et Copyright"
+other = "Informações legais e Copyright"
 
 [made-with]
-other = "Fait avec"
+other = "Made with"
 
 [by-freebsd-community]
-other = "par la communauté FreeBSD"
+other = "by the FreeBSD Community"
 
 [copyright]
-other = "Tous droits réservés."
+other = "Todos os direitos reservados."
 
 # ---------------------------------------------------
 # Articles page
 # ---------------------------------------------------
 [list-desc-articles]
-other = "Explore a comprehensive list of FreeBSD articles."
+other = "Explore uma lista abrangente de artigos do FreeBSD."
 
 # ---------------------------------------------------
 # Books page
 # ---------------------------------------------------
 [prev]
-other = "Prev"
+other = "Anterior"
 
 [next]
-other = "Next"
+other = "Próximo"
 
 [home]
-other = "Home"
+other = "Início"
 
 [split-html]
-other = "Split HTML"
+other = "HTML dividido"
 
 [single-html]
-other = "Single HTML"
+other = "HTML único"
 
 [book-chapters]
-other = "Book chapters"
+other = "Capítulos"
 
 [book-menu]
-other = "Book menu"
+other = "Menu"
 
 [list-desc-books]
-other = "Explore a comprehensive list of FreeBSD books."
+other = "Explore uma lista abrangente de livros do FreeBSD."
 
 # ---------------------------------------------------
 # Languages page
 # ---------------------------------------------------
 [select-language]
-other = "Select a language"
+other = "Selecione um idioma"
 
 [current-selection]
-other = "Current selection:"
+other = "Seleção atual:"
 
 # ---------------------------------------------------
 # Copyright

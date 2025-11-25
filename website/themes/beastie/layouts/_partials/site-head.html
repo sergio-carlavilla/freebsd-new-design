@@ -27,44 +27,20 @@
   <meta name="theme-color" content="#790000" />
   <meta name="color-scheme" content="system light dark high-contrast" />
 
-  {{ if $.Site.Params.isOnline }}
-    <link
-      rel="shortcut icon"
-      href="{{ absLangURL ($.Site.BaseURL) }}favicon.ico"
-    />
+  <link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}" />
 
-    {{- $styles := resources.Get "styles/main.scss" | css.Sass | resources.Minify }}
-    <link rel="stylesheet" href="{{ $styles.Permalink }}" />
-    <link
-      rel="stylesheet"
-      href="{{ absLangURL ($.Site.BaseURL) }}css/font-awesome-min.css"
-    />
+  {{- $styles := resources.Get "styles/main.scss" | css.Sass | resources.Minify }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+  <link rel="stylesheet" href="{{ "css/font-awesome-min.css" | relURL }}" />
 
-    {{- $themeChooser := resources.Get "js/theme-chooser.js" | resources.Minify }}
-    <script defer src="{{ $themeChooser.RelPermalink }}"></script>
+  {{- $themeChooser := resources.Get "js/theme-chooser.js" | resources.Minify }}
+  <script defer src="{{ $themeChooser.RelPermalink }}"></script>
 
-    {{- $copyClipboard := resources.Get "js/copy-clipboard.js" | resources.Minify }}
-    <script defer src="{{ $copyClipboard.RelPermalink }}"></script>
+  {{- $copyClipboard := resources.Get "js/copy-clipboard.js" | resources.Minify }}
+  <script defer src="{{ $copyClipboard.RelPermalink }}"></script>
 
-    {{- $search := resources.Get "js/search.js" | resources.Minify }}
-    <script defer src="{{ $search.RelPermalink }}"></script>
-  {{ else }}
-    <link rel="shortcut icon" href="/favicon.ico" />
-
-    {{- $styles := resources.Get "styles/main.scss" | css.Sass | resources.Minify }}
-    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
-    <link rel="stylesheet" href="/css/font-awesome-min.css" />
-
-    {{- $themeChooser := resources.Get "js/theme-chooser.js" | resources.Minify }}
-    <script defer src="{{ $themeChooser.RelPermalink }}"></script>
-
-    {{- $copyClipboard := resources.Get "js/copy-clipboard.js" | resources.Minify }}
-    <script defer src="{{ $copyClipboard.RelPermalink }}"></script>
-
-    {{- $search := resources.Get "js/search.js" | resources.Minify }}
-    <script defer src="{{ $search.RelPermalink }}"></script>
-  {{ end }}
-
+  {{- $search := resources.Get "js/search.js" | resources.Minify }}
+  <script defer src="{{ $search.RelPermalink }}"></script>
 
   <!-- SEO -->
   {{ if $.Site.Params.isOnline }}
@@ -89,10 +65,7 @@
       {{ end }}"
     />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="{{ absLangURL ($.Site.BaseURL) }}favicon.ico"
-    />
+    <meta property="og:image" content="{{ "favicon.ico" | relURL }}" />
     <meta property="og:image:alt" content="FreeBSD Logo" />
     <meta
       property="og:locale"

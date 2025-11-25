@@ -1,172 +1,278 @@
 {{ define "main" }}
-{{ $currentLang := $.Site.Language.Lang }}
+  <div
+    class="front-page-band-off"
+    style="background: linear-gradient(160deg, var(--background-accent-color), var(--background-color) 50vw);"
+  >
+    <div class="front-page-band-content">
+      <!-- begin alt1 -->
+      <div style="margin: 40px 0 70px 0;">
+        <div
+          class="logo-box freebsd-horizontal"
+          style="margin: 60px 10px; float: none; width: auto; height: clamp(100px, 30vw, 180px);"
+        >
+          <div class="logo-box-image" style=""></div>
+        </div>
 
-<div class="front-page-band-off" style="background: linear-gradient(160deg, var(--background-accent-color), var(--background-color) 50vw);'">
-  <div class="front-page-band-content">
+        <div
+          style="margin: 30px 0; line-height: normal; font-weight: 400; font-size: 30px; text-align: center;"
+        >
+          A Powerful, Open&nbsp;Source
+          <br />Operating&nbsp;System
+        </div>
 
+        <style>
+          .downloads a {
+            text-decoration: none;
+          }
+          .downloads a:hover {
+            text-decoration: underline;
+          }
+        </style>
+        <div
+          style="display: flex; flex-wrap: wrap; justify-content: center; margin: 0 auto;"
+        >
+          <div
+            class="downloads"
+            style="flex: 0 0 20%; text-align: center; margin-top: 90px;"
+          >
+            <div
+              style="color: var(--h1-color); padding: 2px 0px; border-radius: 5px; font-size: 18px; font-weight: 500; margin: 0 0 5px 0; "
+            >
+              Download FreeBSD 14.3
+            </div>
+            <div>
+              <a
+                style="background: var(--h1-color); color: var(--background-color); padding: 5px 10px; border-radius: 5px; font-size: 14px; font-weight: 500;"
+                href="https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/14.3/"
+                >amd64</a
+              >
+              <a
+                style="background: var(--h1-color); color: var(--background-color); padding: 5px 10px; border-radius: 5px; font-size: 14px; font-weight: 500;"
+                href="https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/14.3/"
+                >aarch64</a
+              >
+              <a
+                style="background: var(--h1-color); color: var(--background-color); padding: 5px 10px; border-radius: 5px; font-size: 14px; font-weight: 500;"
+                href="/where/#download"
+                >other</a
+              >
+            </div>
+            <div style="margin: 5px 0 0 0;">
+              <a href="/releases/14.3R/announce/">announcement</a>,
+              <a href="/releases/14.3R/relnotes/">notes</a>
+            </div>
+          </div>
 
-<!-- begin alt1 -->
-<div style="margin: 40px 0 70px 0;">
+          <div
+            class="downloads"
+            style="flex: 0 0 20%; text-align: center; margin-top: 90px;"
+          >
+            <div
+              style="color: var(--h1-color); padding: 2px 0px; border-radius: 5px; font-size: 18px; font-weight: 500;"
+            >
+              Upcoming Releases
+            </div>
+            <div style="margin: 5px 0;">
+              15.0: <a href="/releases/15.0R/schedule/">2025-12</a> – 14.4:
+              <a href="/releng/">2026-03</a>
+            </div>
+            <div>
+              <a href="/where/#download-snapshots">development snapshots</a>
+            </div>
+          </div>
 
-  <div class="logo-box freebsd-horizontal" style="margin: 60px 10px; float: none; width: auto; height: clamp(100px, 30vw, 180px);">
-    <div class="logo-box-image" style=""></div>
-  </div>
-
-  <div style="margin: 30px 0; line-height: normal; font-weight: 400; font-size: 30px; text-align: center;">
-      A Powerful, Open&nbsp;Source
-      <br>Operating&nbsp;System
-  </div>
-
-  <style>
-    .downloads a {text-decoration: none;}
-    .downloads a:hover {text-decoration: underline;}
-  </style>
-<div style="display: flex; flex-wrap: wrap; justify-content: center; margin: 0 auto;">
-  <div class="downloads" style="flex: 0 0 20%; text-align: center; margin-top: 90px;">
-    <div style="color: var(--h1-color); padding: 2px 0px; border-radius: 5px; font-size: 18px; font-weight: 500; margin: 0 0 5px 0; ">Download FreeBSD 14.3</div>
-    <div>
-      <a style="background: var(--h1-color); color: var(--background-color); padding: 5px 10px; border-radius: 5px; font-size: 14px; font-weight: 500;" href="https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/14.3/">amd64</a>
-      <a style="background: var(--h1-color); color: var(--background-color); padding: 5px 10px; border-radius: 5px; font-size: 14px; font-weight: 500;" href="https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/14.3/">aarch64</a>
-      <a style="background: var(--h1-color); color: var(--background-color); padding: 5px 10px; border-radius: 5px; font-size: 14px; font-weight: 500;" href="/where/#download">other</a>
+          <div
+            class="downloads"
+            style="display: none; flex: 0 0 20%; text-align: center; margin-top: 90px;"
+          >
+            <div
+              style="color: var(--h1-color); padding: 2px 0px; border-radius: 5px; font-size: 18px; font-weight: 500;"
+            >
+              Additional Resources
+            </div>
+            <div>
+              <a href="/where">all downloads</a><br />
+              <a href="https://docs.freebsd.org/en/books/handbook/"
+                >the handbook</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end alt1 -->
     </div>
-    <div style="margin: 5px 0 0 0;">
-      <a href="/releases/14.3R/announce/">announcement</a>, <a href="/releases/14.3R/relnotes/">notes</a>
+    <!-- end fp band content -->
+  </div>
+  <!-- end fp band -->
+
+  <div class="front-page-band-on">
+    <div class="front-page-band-content">
+      <div id="why">
+        <h2>Why FreeBSD?</h2>
+        <p>
+          There are many reasons to choose FreeBSD. Browse highlights below or
+          explore <a href="/features/">features</a> for more insights.
+        </p>
+
+        <div class="why-freebsd-flex" style="margin-top: 30px">
+          <div class="why-freebsd-flex-item">
+            <h3>Native ZFS</h3>
+            <div class="logo-box openzfs">
+              <div class="logo-box-image"></div>
+            </div>
+            <p>
+              <a href="https://openzfs.github.io/openzfs-docs/">OpenZFS</a> is a
+              mature, sophisticated, and much-loved file system. FreeBSD is one
+              of the only operating systems to offer it as a fully integrated
+              feature and not as manual add-on. This means it's painless to
+              choose ZFS from the installer, and you won't have to worry during
+              system upgrades.
+            </p>
+          </div>
+
+          <div class="why-freebsd-flex-item">
+            <h3>Virtualization</h3>
+            <div class="logo-box bhyve">
+              <div class="logo-box-image"></div>
+            </div>
+            <p>
+              FreeBSD comes with <a href="https://bhyve.org">bhyve</a>, a
+              feature-rich type 2 hypervisor. bhyve supports virtio hardware,
+              PCI passthrough, and high-performance emulated NVMe. Run
+              <a href="https://man.freebsd.org/bhyve">bhyve(8)</a> directly, or
+              leverage tools like
+              <a href="https://man.freebsd.org/vm">vm-bhyve(8)</a> to simplify
+              management of virtual machines.
+            </p>
+          </div>
+
+          <div class="why-freebsd-flex-item">
+            <h3>Jails</h3>
+            <div class="logo-box jails">
+              <div class="logo-box-image"></div>
+            </div>
+            <p>
+              FreeBSD
+              <a href="https://docs.freebsd.org/en/books/handbook/jails/"
+                >jails</a
+              >
+              are isolated environments that allow you to partition your
+              system's workload. Want to run a web server with its own isolated
+              file system and networking? Put it in a jail. Use the built-in
+              <a href="https://man.freebsd.org/jail">jail(8)</a> command or
+              leverage tools like
+              <a href="https://bastillebsd.org">Bastille</a> to make jail
+              management trivial.
+            </p>
+          </div>
+
+          <div class="why-freebsd-flex-item">
+            <h3>Networking</h3>
+            <div class="logo-box network">
+              <div class="logo-box-image"></div>
+            </div>
+            <p>
+              FreeBSD has long been known for its excellent networking
+              performance. Today companies like Netflix rely on the performance
+              and stability of FreeBSD's network stack to handle some of the
+              most demanding loads in the world.
+            </p>
+          </div>
+
+          <div class="why-freebsd-flex-item">
+            <h3>Documentation</h3>
+            <div class="logo-box docs">
+              <div class="logo-box-image"></div>
+            </div>
+            <p>
+              FreeBSD prides itself in having comprehensive, well-written
+              documentation. You'll find it on the
+              <a href="https://docs.freebsd.org/en/">documentation page</a>, and
+              perhaps more importantly you'll find it as part of the FreeBSD OS
+              itself. Tools like
+              <a href="https://man.freebsd.org/apropos">apropos(1)</a> make
+              finding docs simple.
+            </p>
+          </div>
+
+          <div class="why-freebsd-flex-item">
+            <h3>Community</h3>
+            <div class="logo-box fbf">
+              <div class="logo-box-image"></div>
+            </div>
+            <p>
+              The FreeBSD community is vibrant and collaborative. Engage
+              virtually on
+              <a href="https://web.libera.chat/?channel=#freebsd">IRC</a>,
+              <a href="https://wiki.freebsd.org/Discord/DiscordServer"
+                >Discord</a
+              >, or the <a href="https://lists.freebsd.org/">mailing lists</a>;
+              or attend a FreeBSD
+              <a href="https://www.freebsd.org/events/">event</a>. And be sure
+              to checkout all the community engagement driven by the
+              <a href="https://freebsdfoundation.org">FreeBSD Foundation</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- end why -->
     </div>
+    <!-- end fp band content -->
   </div>
+  <!-- end fp band -->
 
-  <div class="downloads" style="flex: 0 0 20%; text-align: center; margin-top: 90px;">
-    <div style="color: var(--h1-color); padding: 2px 0px; border-radius: 5px; font-size: 18px; font-weight: 500;">Upcoming Releases</div>
-    <div style="margin: 5px 0;">
-      15.0: <a href="/releases/15.0R/schedule/">2025-12</a> –
-      14.4: <a href="/releng/">2026-03</a>
+  <div class="front-page-band-off">
+    <div class="front-page-band-content">
+      <h2 style="margin-top: 40px; clear: both">Support the Project</h2>
+      <!--<div class="logo-box freebsd">
+    <div class="logo-box-image"></div>
+    </div>-->
+      <ul>
+        <li>
+          <a href="https://freebsdfoundation.org/donate/">Donate</a> - funding
+          helps ensure the project thrives; for details read
+          <a href="https://freebsdfoundation.org/about-us/about-the-foundation/"
+            >About the Foundation</a
+          >
+        </li>
+        <li>
+          <a href="https://docs.freebsd.org/en/articles/contributing/"
+            >Become a Contributor</a
+          >
+          - submit source code, ports, docs, or bugs to make the next release
+          the best yet
+        </li>
+        <li>
+          <a href="https://docs.freebsd.org/en/books/faq/">Spread the Word</a> -
+          if you love FreeBSD as much as we do, let people know
+        </li>
+      </ul>
     </div>
-    <div>
-      <a href="/where/#download-snapshots">development snapshots</a>
+    <!-- end fp band content -->
+  </div>
+  <!-- end fp band -->
+
+  <div class="front-page-band-off">
+    <div class="front-page-band-content">
+      <div id="news" class="feed-flex">
+        <div class="feed-flex-item">
+          {{ partial "news.html" . }}
+        </div>
+        <div class="feed-flex-item">
+          {{ partial "advisories.html" . }}
+        </div>
+        <div class="feed-flex-item">
+          {{ partial "errata-notices.html" . }}
+        </div>
+        <div class="feed-flex-item">
+          {{ partial "events.html" . }}
+        </div>
+        <div class="feed-flex-item">
+          {{ partial "press.html" . }}
+        </div>
+      </div>
     </div>
+    <!-- end fp band content -->
   </div>
-
-  <div class="downloads" style="display: none; flex: 0 0 20%; text-align: center; margin-top: 90px;">
-    <div style="color: var(--h1-color); padding: 2px 0px; border-radius: 5px; font-size: 18px; font-weight: 500;">Additional Resources</div>
-    <div>
-      <a href="/where">all downloads</a><br>
-      <a href="https://docs.freebsd.org/en/books/handbook/">the handbook</a>
-    </div>
-  </div>
-
-</div>
-</div>
-<!-- end alt1 -->
-
-  </div> <!-- end fp band content -->
-</div>   <!-- end fp band -->
-
-
-<div class="front-page-band-on">
-<div class="front-page-band-content">
-
-<div id="why" style="">
-  <h2>Why FreeBSD?</h2>
-  <p>There are many reasons to choose FreeBSD. Browse highlights below or explore <a href="/features/">features</a> for more insights.</p>
-
-<div class="why-freebsd-flex" style="margin-top: 30px">
-<div class="why-freebsd-flex-item">
-<h3>Native ZFS</h3>
-<div class="logo-box openzfs">
-<div class="logo-box-image"></div>
-</div>
-<p><a href="https://github.com/openzfs/zfs">OpenZFS</a> is a mature, sophisticated, and much-loved file system. FreeBSD is one of the only operating systems to offer it as a fully integrated feature and not as manual add-on. This means it's painless to choose ZFS from the installer, and you won't have to worry during system upgrades.</p>
-</div>
-<div class="why-freebsd-flex-item">
-<h3>Virtualization</h3>
-<div class="logo-box bhyve">
-<div class="logo-box-image"></div>
-</div>
-<p>FreeBSD comes with <a href="https://bhyve.org">bhyve</a>, a feature-rich type 2 hypervisor. bhyve supports virtio hardware, PCI passthrough, and high-performance emulated NVMe. Run <a href="https://man.freebsd.org/bhyve">bhyve(8)</a> directly, or leverage tools like <a href="https://man.freebsd.org/vm">vm-bhyve(8)</a> to simplify management of virtual machines.</p>
-</div>
-<div class="why-freebsd-flex-item">
-<h3>Jails</h3>
-<div class="logo-box jails">
-<div class="logo-box-image"></div>
-</div>
-<p>FreeBSD <a href="https://docs.freebsd.org/en/books/handbook/jails/">jails</a> are isolated environments that allow you to partition your system's workload. Want to run a web server with its own isolated file system and networking? Put it in a jail. Use the built-in <a href="https://man.freebsd.org/jail">jail(8)</a> command or leverage tools like <a href="https://bastillebsd.org">Bastille</a> to make jail management trivial.</p>
-</div>
-<div class="why-freebsd-flex-item">
-<h3>Networking</h3>
-<div class="logo-box network">
-<div class="logo-box-image"></div>
-</div>
-<p>FreeBSD has long been known for its excellent networking performance. Today companies like Netflix rely on the performance and stability of FreeBSD's network stack to handle some of the most demanding loads in the world.</p>
-</div>
-<div class="why-freebsd-flex-item">
-<h3>Documentation</h3>
-<div class="logo-box docs">
-<div class="logo-box-image"></div>
-</div>
-<p>FreeBSD prides itself in having comprehensive, well-written documentation. You'll find it on the <a href="https://docs.freebsd.org/en/">documentation page</a>, and perhaps more importantly you'll find it as part of the FreeBSD OS itself. Tools like <a href="https://man.freebsd.org/apropos">apropos(1)</a> make finding docs simple.</p>
-</div>
-<div class="why-freebsd-flex-item">
-<h3>Community</h3>
-<div class="logo-box fbf">
-<div class="logo-box-image"></div>
-</div>
-<p>The FreeBSD community is vibrant and collaborative. Engage virtually on <a href="https://web.libera.chat/?channel=#freebsd">IRC</a>, <a href="https://wiki.freebsd.org/Discord/DiscordServer">Discord</a>, or the <a href="https://lists.freebsd.org/">mailing lists</a>; or attend a FreeBSD <a href="https://www.freebsd.org/events/">event</a>. And be sure to checkout all the community engagement driven by the <a href="https://freebsdfoundation.org">FreeBSD Foundation</a>.</p>
-</div>
-</div>
-</div> <!-- end why -->
-</div> <!-- end fp band content -->
-</div>   <!-- end fp band -->
-
-
-<div class="front-page-band-off">
-<div class="front-page-band-content">
-
-<h2 style="margin-top: 40px; clear: both">Support the Project</h2>
-<!--<div class="logo-box freebsd">
-<div class="logo-box-image"></div>
-</div>-->
-<ul>
-    <li><a href="https://freebsdfoundation.org/donate/">Donate</a> - funding helps ensure the project thrives; for details read <a href="https://freebsdfoundation.org/about-us/about-the-foundation/">About the Foundation</a></li>
-    <li><a href="https://docs.freebsd.org/en/articles/contributing/">Become a Contributor</a> - submit source code, ports, docs, or bugs to make the next release the best yet</li>
-    <li><a href="https://docs.freebsd.org/en/books/faq/">Spread the Word</a> - if you love FreeBSD as much as we do, let people know</li>
-</ul>
-</div> <!-- end fp band content -->
-</div>   <!-- end fp band -->
-
-
-<div class="front-page-band-off">
-<div class="front-page-band-content">
-
-{{ $language := "" }}
-{{ $currentLang := $.Site.Language.Lang }}
-{{ $siteBaseUrl := absLangURL ($.Site.BaseURL) }}
-
-{{ if ne $currentLang "en" }}
-  {{ $language = $currentLang }}
-{{ end }}
-
-{{ .Scratch.Set "lang" $language }}
-{{ .Scratch.Set "sUrl" $siteBaseUrl }}
-<div id="news" class="feed-flex">
-  <div class="feed-flex-item">
-    {{ partial "news.html" . }}
-  </div>
-  <div class="feed-flex-item">
-    {{ partial "advisories.html" . }}
-  </div>
-  <div class="feed-flex-item">
-    {{ partial "errata-notices.html" . }}
-  </div>
-  <div class="feed-flex-item">
-    {{ partial "events.html" . }}
-  </div>
-  <div class="feed-flex-item">
-    {{ partial "press.html" . }}
-  </div>
-</div>
-
-  </div>
-  </div> <!-- end fp band content -->
-</div>   <!-- end fp band -->
-
-
+  <!-- end fp band -->
 {{ end }}
