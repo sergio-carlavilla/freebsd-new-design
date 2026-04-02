@@ -1,0 +1,7 @@
+---
+title: "Community"
+icon: "fbf"
+weight: 6
+---
+
+The FreeBSD link:./community[community] is vibrant and collaborative. Groups are active across many mediums, from real-time communications to mailing lists and newsgroups. Be sure to check out the community engagement that is driven by the link:https://freebsdfoundation.org/[FreeBSD Foundation]

@@ -1,0 +1,28 @@
+{{ $rel150 := index $.Site.Data.releases "rel150-current" }}
+{{ $rel143 := index $.Site.Data.releases "rel143-current" }}
+
+<section class="downloads download-section">
+  <div class="download-section-title">{{ i18n "download-freebsd" }} {{ $rel150 }}</div>
+  <div>
+    <a class="download-button-release" href="https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/{{ $rel150 }}/">amd64</a>
+    <a class="download-button-release" href="https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/{{ $rel150 }}/">aarch64</a>
+    <a class="download-button-release" href="/where/#download">{{ i18n "other" }}</a>
+  </div>
+  <div class="download-links">
+    <a href="/releases/{{ $rel150 }}R/announce/">{{ i18n "announcement" }}</a>,
+    <a href="/releases/{{ $rel150 }}R/relnotes/">{{ i18n "notes" }}</a>
+  </div>
+</section>
+
+<section class="downloads download-section">
+  <div class="download-section-title">{{ i18n "download-freebsd" }} {{ $rel143 }}</div>
+  <div>
+    <a class="download-button-release" href="https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/{{ $rel143 }}/">amd64</a>
+    <a class="download-button-release" href="https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/{{ $rel143 }}/">aarch64</a>
+    <a class="download-button-release" href="/where/#download">{{ i18n "other" }}</a>
+  </div>
+  <div class="download-links">
+    <a href="/releases/{{ $rel143 }}R/announce/">{{ i18n "announcement" }}</a>,
+    <a href="/releases/{{ $rel143 }}R/relnotes/">{{ i18n "notes" }}</a>
+  </div>
+</section>

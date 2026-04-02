@@ -1,0 +1,5 @@
+---
+---
+
+* {current-version}: link:https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/{current-version}/[amd64] | link:https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/{current-version}/[aarch64] | link:/where/#download[Other]
+* {legacy-version}: link:https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/{legacy-version}/[amd64] | link:https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/{legacy-version}/[aarch64] | link:/where/#download[Other]

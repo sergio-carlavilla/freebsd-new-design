@@ -1,0 +1,10 @@
+---
+title: "Jails"
+icon: "jails"
+weight: 3
+---
+
+include::shared/en/urls.adoc[]
+:doctype: article
+
+FreeBSD link:{handbook}jails[jails] enable you to partition your system’s workload within isolated environments. Want to run a web server with its own isolated file system and networking? Put it in a jail. Use the built-in man:jail[8] command or leverage alternative tools to make jail management trivial
