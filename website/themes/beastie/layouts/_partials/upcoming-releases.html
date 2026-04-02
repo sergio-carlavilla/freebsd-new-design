@@ -1,0 +1,62 @@
+<section class="downloads download-section">
+  <div class="download-section-title">{{ i18n "upcoming-releases" }}</div>
+  <div class="additional-downloads">
+    {{ $lang := .Site.Language.Lang }}
+    {{ $betaUpcoming := index $.Site.Data.releases "beta-upcoming" }}
+    {{ if ne $betaUpcoming "IGNORE" }}
+      {{ $langUrl := index $.Site.Data.releases ( printf "u-betarel-schedule-%s" $lang ) }}
+      {{ $fileExists := fileExists (printf "content%s.adoc" $langUrl) }}
+      {{ if and (ne $lang "en") $langUrl $fileExists }}
+        {{/* if lang is not "en" and the variable "u-betarel-schedule-"+$lang defined
+            in file releases.adoc (url to schedule) and file with schedule exists */}}
+        <a class="download-button-release" href="{{ $langUrl }}">
+          {{ index $.Site.Data.releases "betarel-current" }}
+        </a>
+      {{ else }}
+        {{/* otherwise use "en" link */}}
+        <a class="download-button-release" href={{ index $.Site.Data.releases "u-betarel-schedule" }}>
+          {{ index $.Site.Data.releases "betarel-current" }}
+        </a>
+      {{ end }}
+    {{ end }}
+
+    {{ $beta2Upcoming := index $.Site.Data.releases "beta2-upcoming" }}
+    {{ if ne $beta2Upcoming "IGNORE" }}
+      {{ $langUrl := index $.Site.Data.releases ( printf "u-betarel2-schedule-%s" $lang ) }}
+      {{ $fileExists := fileExists (printf "content%s.adoc" $langUrl) }}
+      {{ if and (ne $lang "en") $langUrl $fileExists }}
+        {{/* if lang is not "en" and the variable "u-betarel2-schedule-"+$lang defined
+            in file releases.adoc (url to schedule) and file with schedule exists */}}
+        <a class="download-button-release" href="{{ $langUrl }}">
+          {{ index $.Site.Data.releases "betarel2-current" }}
+        </a>
+      {{ else }}
+        {{/* otherwise use "en" link */}}
+        <a class="download-button-release" href={{ index $.Site.Data.releases "u-betarel2-schedule" }}>
+          {{ index $.Site.Data.releases "betarel2-current" }}
+        </a>
+      {{ end }}
+    {{ end }}
+
+    {{ $beta3Upcoming := index $.Site.Data.releases "beta3-upcoming" }}
+    {{ if ne $beta3Upcoming "IGNORE" }}
+      {{ $langUrl := index $.Site.Data.releases ( printf "u-betarel3-schedule-%s" $lang ) }}
+      {{ $fileExists := fileExists (printf "content%s.adoc" $langUrl) }}
+      {{ if and (ne $lang "en") $langUrl $fileExists }}
+        {{/* if lang is not "en" and the variable "u-betarel3-schedule-"+$lang defined
+            in file releases.adoc (url to schedule) and file with schedule exists */}}
+        <a class="download-button-release" href="{{ $langUrl }}">
+          {{ index $.Site.Data.releases "betarel3-current" }}
+        </a>
+      {{ else }}
+        {{/* otherwise use "en" link */}}
+        <a class="download-button-release" href={{ index $.Site.Data.releases "u-betarel3-schedule" }}>
+          {{ index $.Site.Data.releases "betarel3-current" }}
+        </a>
+      {{ end }}
+    {{ end }}
+  </div>
+  <div>
+    <a href="/where/#download-snapshots">{{ i18n "development-snapshots" }}</a>
+  </div>
+</section>

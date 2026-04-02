@@ -4,107 +4,49 @@
       <div class="logo-box freebsd-horizontal front-page-logo">
         <div class="logo-box-image"></div>
       </div>
-      <div class="front-page-tagline">{{ i18n "title-one" }}<br />{{ i18n "title-two" }}</div>
+      <div class="front-page-tagline">
+        {{ with .Site.GetPage "home/tagline" }}
+          {{ .Content | safeHTML }}
+        {{ end }}
+      </div>
       <section class="downloads-container">
-        <section class="downloads download-section">
-          <div class="download-section-title">{{ i18n "download-freebsd" }} {{ index $.Site.Data.releases "rel150-current" }}</div>
-          <div>
-            <a class="download-button-release" href="https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/{{ index $.Site.Data.releases "rel150-current" }}/">amd64</a>
-            <a class="download-button-release" href="https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/{{ index $.Site.Data.releases "rel150-current" }}/">aarch64</a>
-            <a class="download-button-release" href="/where/#download">{{ i18n "other" }}</a>
-          </div>
-          <div class="download-links">
-            <a href="/releases/{{ index $.Site.Data.releases "rel150-current" }}R/announce/">{{ i18n "announcement" }}</a>,
-            <a href="/releases/{{ index $.Site.Data.releases "rel150-current" }}R/relnotes/">{{ i18n "notes" }}</a>
-          </div>
-        </section>
-        <section class="downloads download-section">
-          <div class="download-section-title">{{ i18n "download-freebsd" }} {{ index $.Site.Data.releases "rel143-current" }}</div>
-          <div>
-            <a class="download-button-release" href="https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/{{ index $.Site.Data.releases "rel143-current" }}/">amd64</a>
-            <a class="download-button-release" href="https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/{{ index $.Site.Data.releases "rel143-current" }}/">aarch64</a>
-            <a class="download-button-release" href="/where/#download">{{ i18n "other" }}</a>
-          </div>
-          <div class="download-links">
-            <a href="/releases/{{ index $.Site.Data.releases "rel143-current" }}R/announce/">{{ i18n "announcement" }}</a>,
-            <a href="/releases/{{ index $.Site.Data.releases "rel143-current" }}R/relnotes/">{{ i18n "notes" }}</a>
-          </div>
-        </section>
-        <section class="downloads download-section">
-          <div class="download-section-title">{{ i18n "upcoming-releases" }}</div>
-          <div class="additional-downloads">
-            {{ $betaUpcoming := index $.Site.Data.releases "beta-upcoming" }}
-            {{ if ne $betaUpcoming "IGNORE" }}
-              <a class="download-button-release" href={{ index $.Site.Data.releases "u-betarel-schedule" }}>{{ index $.Site.Data.releases "betarel-current" }}</a>
-            {{ end }}
-            {{ $beta2Upcoming := index $.Site.Data.releases "beta2-upcoming" }}
-            {{ if ne $beta2Upcoming "IGNORE" }}
-              <a class="download-button-release" href={{ index $.Site.Data.releases "u-betarel2-schedule" }}>{{ index $.Site.Data.releases "betarel2-current" }}</a>
-            {{ end }}
-            {{ $beta3Upcoming := index $.Site.Data.releases "beta3-upcoming" }}
-            {{ if ne $beta3Upcoming "IGNORE" }}
-              <a class="download-button-release" href={{ index $.Site.Data.releases "u-betarel3-schedule" }}>{{ index $.Site.Data.releases "betarel3-current" }}</a>
-            {{ end }}
-            <!--{{ index $.Site.Data.releases "rel151-current" }}: <a href="/releases/{{ index $.Site.Data.releases "rel151-current" }}R/schedule/">2025-12</a> -
-            {{ index $.Site.Data.releases "rel144-current" }}: <a href="/releases/{{ index $.Site.Data.releases "rel144-current" }}R/schedule/">2026-03</a>-->
-          </div>
-          <div>
-            <a href="/where/#download-snapshots">{{ i18n "development-snapshots" }}</a>
-          </div>
-        </section>
+        {{ partial "download-section.html" . }}
+        {{ partial "upcoming-releases.html" . }}
       </section>
     </section>
   </section>
   <div class="front-page-band-on">
     <section class="front-page-band-content">
       <section class="why-freebsd-flex">
-        <section class="why-freebsd-flex-item">
-          <h3>{{ i18n "zfs-title" }}</h3>
-          <div class="logo-box openzfs">
-            <div class="logo-box-image"></div>
-          </div>
-          <p>
-            <a href="https://openzfs.github.io/openzfs-docs/">OpenZFS</a> {{ i18n "zfs-description" }}
-          </p>
-        </section>
-        <section class="why-freebsd-flex-item">
-          <h3>{{ i18n "virtualization-title" }}</h3>
-          <div class="logo-box bhyve">
-            <div class="logo-box-image"></div>
-          </div>
-          <p>{{ i18n "virtualization-description-one" }} <a href="https://bhyve.org">bhyve</a> {{ i18n "virtualization-description-two" }} <a href="https://man.freebsd.org/bhyve">bhyve(8)</a> {{ i18n "virtualization-description-three" }} <a href="https://man.freebsd.org/vm">vm-bhyve(8)</a> {{ i18n "virtualization-description-four" }}
-          </p>
-        </section>
-        <section class="why-freebsd-flex-item">
-          <h3>{{ i18n "jails-title" }}</h3>
-          <div class="logo-box jails">
-            <div class="logo-box-image"></div>
-          </div>
-          <p>FreeBSD <a href="https://docs.freebsd.org/en/books/handbook/jails/">jails</a> {{ i18n "jails-description-one" }} <a href="https://man.freebsd.org/jail">jail(8)</a> {{ i18n "jails-description-two" }}
-          </p>
-        </section>
-        <section class="why-freebsd-flex-item">
-          <h3>{{ i18n "networking-title" }}</h3>
-          <div class="logo-box network">
-            <div class="logo-box-image"></div>
-          </div>
-          <p>{{ i18n "networking-description" }}</p>
-        </section>
-        <section class="why-freebsd-flex-item">
-          <h3>{{ i18n "documentation-title" }}</h3>
-          <div class="logo-box docs">
-            <div class="logo-box-image"></div>
-          </div>
-          <p>{{ i18n "documentation-description-one" }} <a href="https://docs.freebsd.org/en/">{{ i18n "documentation-description-two" }}</a>{{ i18n "documentation-description-three" }}
-          </p>
-        </section>
-        <section class="why-freebsd-flex-item">
-          <h3>{{ i18n "community-title" }}</h3>
-          <div class="logo-box fbf">
-            <div class="logo-box-image"></div>
-          </div>
-          <p>{{ i18n "community-description-one" }}<a href="/community">{{ i18n "community-description-two" }}</a>{{ i18n "community-description-three" }} <a href="https://freebsdfoundation.org">{{ i18n "community-description-four" }}</a></p>
-        </section>
+        {{ $home := .Site.GetPage "/home" }}
+        {{ $featurePaths := slice
+          "/home/feature1"
+          "/home/feature2"
+          "/home/feature3"
+          "/home/feature4"
+          "/home/feature5"
+          "/home/feature6"
+        }}
+
+        {{ $features := slice }}
+        {{ range $featurePaths }}
+          {{ $page := $.Site.GetPage . }}
+          {{ if $page }}
+            {{ $features = $features | append $page }}
+          {{ end }}
+        {{ end }}
+
+        {{ range sort $features "Params.weight" }}
+          <section class="why-freebsd-flex-item">
+            <h3>{{ .Params.title }}</h3>
+            <div class="logo-box {{ .Params.icon }}">
+              <div class="logo-box-image"></div>
+            </div>
+            <p>
+              {{ .Content | safeHTML }}
+            </p>
+          </section>
+        {{ end }}
       </section>
     </section>
   </div>

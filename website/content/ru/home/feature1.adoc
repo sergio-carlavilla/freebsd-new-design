@@ -1,0 +1,8 @@
+---
+title: "OpenZFS"
+icon: "openzfs"
+weight: 1
+---
+
+link:https://openzfs.github.io/openzfs-docs/[OpenZFS] is an outstanding storage platform that encompasses the functionality of traditional filesystems, volume managers, and more.
+FreeBSD is one of the few operating systems to offer it as a fully integrated feature, meaning you won’t have to worry during system upgrades

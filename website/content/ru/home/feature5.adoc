@@ -1,0 +1,6 @@
+---
+title: "Documentation"
+icon: "docs"
+weight: 5
+---
+FreeBSD prides itself on having comprehensive, well-written documentation. There’s the dedicated link:https://docs.freebsd.org/en/[documentation home], and perhaps more importantly, it is a part of the operating system itself

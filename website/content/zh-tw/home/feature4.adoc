@@ -1,0 +1,7 @@
+---
+title: "Networking"
+icon: "network"
+weight: 4
+---
+
+The technology industry has long known FreeBSD for its excellent networking performance. Today, globally significant companies rely on the performance and stability of FreeBSD’s network stack to handle some of the most demanding loads in the world.

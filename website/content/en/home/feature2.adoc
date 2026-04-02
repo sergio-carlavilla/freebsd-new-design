@@ -1,0 +1,7 @@
+---
+title: "Virtualization"
+icon: "bhyve"
+weight: 2
+---
+
+FreeBSD comes with link:https://bhyve.org/[bhyve] , a feature-rich type 2 hypervisor. bhyve supports virtio hardware, PCI passthrough, and high-performance emulated NVMe. Run man:bhyve[8] directly, or leverage tools like man:vm-bhyve[8] to simplify management of virtual machines.
