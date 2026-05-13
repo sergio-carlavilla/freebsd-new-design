@@ -30,7 +30,7 @@
 :root {
   --main-tag-padding: 30px 40px;
   --max-width: 1200px;
-  --max-width-header: 1500px;
+  --max-width-header: 1350px;
   --max-width-pages: 1500px;
   --header-height: 4.5rem;
 
@@ -641,7 +641,7 @@ input[type='checkbox'] {
   pointer-events: none;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1300px) {
   .header-container {
     flex-direction: column;
   }
