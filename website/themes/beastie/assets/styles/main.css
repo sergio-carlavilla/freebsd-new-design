@@ -11,8 +11,8 @@
  * 1. Redistributions of source code must retain the above copyright
  *    notice, this list of conditions and the following disclaimer.
  * 2. Redistributions in binary form must reproduce the above copyright
- *    notice, this list of conditions and the following disclaimer in the
- *    documentation and/or other materials provided with the distribution.
+ *    notice, this list of conditions and the following disclaimer in
+ *    the documentation and/or other materials provided with the distribution.
  *
  * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
@@ -30,7 +30,7 @@
 :root {
   --main-tag-padding: 30px 40px;
   --max-width: 1200px;
-  --max-width-header: 1350px;
+  --max-width-header: 1650px;
   --max-width-pages: 1500px;
   --header-height: 4.5rem;
 
@@ -155,7 +155,7 @@
     --admonition-links-color: #1A79FF;
 
     --freebsd-logo-horizontal-image: var(--dark-freebsd-logo-horizontal-image);
-  
+
   }
 }
 
@@ -409,6 +409,7 @@ details summary {
 header {
   padding: .5rem 1rem;
   background-color: var(--header-background);
+  font-size: clamp(13px, 0.8vw, 15px);
 }
 
 .header-container {
@@ -550,6 +551,8 @@ input[type='checkbox'] {
 
 .search {
   display: flex;
+  width: 150px;
+  min-width: 150px;
   border-radius: .4rem;
   background-color: var(--white);
   border: 1px solid var(--white);
@@ -559,7 +562,8 @@ input[type='checkbox'] {
 .search input[type='text'] {
   display: inline-block;
   width: 100%;
-  padding: .3rem .8rem;
+  min-width: 0;
+  padding: .3rem .5rem;
   border: none;
   border-radius: .4rem;
   appearance: none;
@@ -569,6 +573,9 @@ input[type='checkbox'] {
 }
 
 .search button {
+  flex: 0 0 2rem;
+  width: 2rem;
+  padding: 0;
   background-color: var(--white);
   border: none;
   border-radius: .4rem;
@@ -584,7 +591,7 @@ input[type='checkbox'] {
 
 .donate a {
   display: inline-block;
-  padding: .5rem 1rem;
+  padding: .45rem .85rem;
   background-color: var(--white);
   border-radius: .4rem;
 }
@@ -734,6 +741,7 @@ input[type='checkbox'] {
 
   .search {
     width: 100%;
+    min-width: 0;
   }
 
   #menu-bars:checked~.search-donate-container {
